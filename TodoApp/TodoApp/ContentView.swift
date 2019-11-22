@@ -9,11 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var todos = ["1", "2", "3"]
+    @State var value = 1
+    
     var body: some View {
-        VStack {
-            Text("To Do List")
-                .font(.largeTitle)
-                .foregroundColor(Color.purple)
+        NavigationView {
+            List{
+                Button(action: {self.todos.append("value")}){
+                Text("Add TODO")
+                }
+                ForEach(todos, id: \.self) { todo in
+                    Text(todo)
+                }
+            }
+            .navigationBarTitle("TODO")
         }
     }
 }

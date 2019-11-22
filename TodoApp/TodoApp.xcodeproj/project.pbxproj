@@ -15,6 +15,7 @@
 		72EA90482385145D00E97D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EA90462385145D00E97D18 /* LaunchScreen.storyboard */; };
 		72EA90532385145D00E97D18 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA90522385145D00E97D18 /* TodoAppTests.swift */; };
 		72EA905E2385145D00E97D18 /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EA905D2385145D00E97D18 /* TodoAppUITests.swift */; };
+		FF85F1CB238667CF001838F1 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF85F1CA238667CF001838F1 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		72EA90592385145D00E97D18 /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72EA905D2385145D00E97D18 /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		72EA905F2385145D00E97D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF85F1CA238667CF001838F1 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				72EA903B2385145C00E97D18 /* AppDelegate.swift */,
 				72EA903D2385145C00E97D18 /* SceneDelegate.swift */,
 				72EA903F2385145C00E97D18 /* ContentView.swift */,
+				FF85F1CA238667CF001838F1 /* Todo.swift */,
 				72EA90412385145D00E97D18 /* Assets.xcassets */,
 				72EA90462385145D00E97D18 /* LaunchScreen.storyboard */,
 				72EA90492385145D00E97D18 /* Info.plist */,
@@ -270,6 +273,7 @@
 				72EA903C2385145C00E97D18 /* AppDelegate.swift in Sources */,
 				72EA903E2385145C00E97D18 /* SceneDelegate.swift in Sources */,
 				72EA90402385145C00E97D18 /* ContentView.swift in Sources */,
+				FF85F1CB238667CF001838F1 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
