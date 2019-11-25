@@ -16,6 +16,7 @@
 		FFDA31CB23896B920021CEEB /* LocationObserverMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31CA23896B920021CEEB /* LocationObserverMapTests.swift */; };
 		FFDA31D623896B920021CEEB /* LocationObserverMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31D523896B920021CEEB /* LocationObserverMapUITests.swift */; };
 		FFDA31E423896BEE0021CEEB /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31E323896BEE0021CEEB /* LocationObserver.swift */; };
+		FFDA31E6238AC94E0021CEEB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA31E5238AC94E0021CEEB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FFDA31D523896B920021CEEB /* LocationObserverMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserverMapUITests.swift; sourceTree = "<group>"; };
 		FFDA31D723896B920021CEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDA31E323896BEE0021CEEB /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
+		FFDA31E5238AC94E0021CEEB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FFDA31C123896B920021CEEB /* Info.plist */,
 				FFDA31BB23896B920021CEEB /* Preview Content */,
 				FFDA31E323896BEE0021CEEB /* LocationObserver.swift */,
+				FFDA31E5238AC94E0021CEEB /* MapView.swift */,
 			);
 			path = LocationObserverMap;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				FFDA31B423896B8D0021CEEB /* AppDelegate.swift in Sources */,
 				FFDA31B623896B8D0021CEEB /* SceneDelegate.swift in Sources */,
+				FFDA31E6238AC94E0021CEEB /* MapView.swift in Sources */,
 				FFDA31E423896BEE0021CEEB /* LocationObserver.swift in Sources */,
 				FFDA31B823896B8D0021CEEB /* ContentView.swift in Sources */,
 			);

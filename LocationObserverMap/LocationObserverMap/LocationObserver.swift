@@ -10,14 +10,16 @@ import Foundation
 import CoreLocation
 import Combine
 
-class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate{
+class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published private(set) var location = CLLocation()
+    @Published var coordinates: [CLLocationCoordinate2D] = []
     
     private let locationManager: CLLocationManager
     
-    override init(){
+    override init() {
         self.locationManager = CLLocationManager()
+        
         super.init()
         
         self.locationManager.delegate = self
@@ -25,8 +27,12 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate{
         self.locationManager.startUpdatingLocation()
     }
     
-    func locationManager(_ :CLLocationManager, didUpdateLocations: [CLLocation])  {
+    func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
         location = didUpdateLocations.last!
-        print (location.coordinate)
+        self.coordinates.append(location.coordinate)
+        //print(location.coordinate)
     }
+    
+    
 }
+
