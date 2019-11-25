@@ -1,6 +1,0 @@
-framework module Pods_GpxReaderTests {
-  umbrella header "Pods-GpxReaderTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
