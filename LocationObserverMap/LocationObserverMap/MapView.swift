@@ -13,35 +13,45 @@ import MapKit
 struct MapView: UIViewRepresentable {
     var coordinate: CLLocationCoordinate2D
     var coordinates: [CLLocationCoordinate2D] = []
-    var isStart =  false
+    var isStart =  true
+    let mapViewDelegate = MapViewDelegate()
     
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
+        
+        view.delegate = mapViewDelegate
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
         if(isStart){
-            let span = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
-            view.setRegion(region, animated: true)
+            
             view.removeAnnotations(view.annotations)
             
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             view.addAnnotation(annotation)
-        } else {
-            printCoordinates()
+            
+            let span = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
+            let region = MKCoordinateRegion(center: coordinate, span: span)
+            view.setRegion(region, animated: true)
+    
+            let polyline = MKPolyline(coordinates: self.coordinates, count:
+                self.coordinates.count)
+            
+            view.addOverlay(polyline)
         }
     }
-    
-    func printCoordinates(){
-        var cnt = 0
-        for i in self.coordinates {
-            print ("Coordinate : \(i.latitude), \(i.longitude)")
-            cnt += 1
+
+    class MapViewDelegate: NSObject, MKMapViewDelegate {
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.lineWidth = 10
+            renderer.fillColor = UIColor.red.withAlphaComponent(0.5)
+            renderer.strokeColor = UIColor.red.withAlphaComponent(0.8)
+            return renderer
         }
-        
-        print ("END \(cnt)")
     }
 }
 

@@ -32,7 +32,5 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
         self.coordinates.append(location.coordinate)
         //print(location.coordinate)
     }
-    
-    
 }
 

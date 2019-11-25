@@ -56,6 +56,7 @@ struct MapView: UIViewRepresentable {
                 print((err?.localizedDescription)!)
                 return
             }
+        
             
             let polyline = direct?.routes.first?.polyline
             map.addOverlay(polyline!)

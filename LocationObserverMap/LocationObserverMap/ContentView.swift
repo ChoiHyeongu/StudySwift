@@ -9,46 +9,43 @@ import SwiftUI
 import CoreLocation
 
 struct ContentView: View {
-    @State var isStart = false
+    @State var isStart = true
     @ObservedObject var locationObserver = LocationObserver()
     
+    let screenSize: CGRect = UIScreen.main.bounds
+    
     var body: some View {
-        VStack {
+        ZStack {
             MapView(
                 coordinate: self.locationObserver.location.coordinate,
                 coordinates: self.locationObserver.coordinates,
                 isStart: self.isStart
-            ).frame(height: 500)
+            ).edgesIgnoringSafeArea(.all)
             
-            Spacer()
-                .frame(height: 32)
-            Text("(\(self.locationObserver.location.coordinate.latitude), \(self.locationObserver.location.coordinate.longitude))")
-            
-            HStack{
-                Button(action: {
-                    print ("------------start--------------------")
-                    self.isStart = true
-                }) {
-                    Text("Start")
-                }
-                Button(action: {
-                    print ("------------stop--------------------")
+            Button(action: {
+                if self.isStart {
                     self.isStart = false
-                }) {
-                    Text("Stop")
+                } else {
+                    self.isStart = true
                 }
-            }
+            }) {
+                Text(!self.isStart ? "Start" : "Stop")
+                    .fontWeight(.bold)
+                    .font(.title)
+                    .padding()
+                    .background(Color.red)
+                    .cornerRadius(40)
+                    .foregroundColor(Color.white)
+                    .padding(10)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(Color.red, lineWidth: 5)
+                )
+                
+                
+                
+            }.position(x: screenSize.width/2, y: screenSize.height-100)
         }
-    }
-    
-    func printCoordinates(){
-        var cnt = 0
-        for i in self.locationObserver.coordinates {
-            print ("Content Coordinate : \(i.latitude), \(i.longitude)")
-            cnt += 1
-        }
-        
-        print ("Content END \(cnt)")
     }
 }
 
@@ -57,3 +54,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
