@@ -28,6 +28,8 @@ struct MapView: UIViewRepresentable {
         if(isStart){
             
             view.removeAnnotations(view.annotations)
+            view.removeOverlays(view.overlays)
+            print ("Overays: \(view.overlays.count)")
             
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
