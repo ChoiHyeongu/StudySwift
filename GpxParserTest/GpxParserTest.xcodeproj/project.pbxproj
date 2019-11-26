@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70C3CB8059E079D520CAE9CA /* Pods_GpxParserTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7910C70D5C3827DE3ECC761 /* Pods_GpxParserTestTests.framework */; };
+		721C1240238CB02700D22ED7 /* gapa.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 721C123F238CB02700D22ED7 /* gapa.gpx */; };
+		7232B62C238CBFD200B7A5DD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7232B62B238CBFD200B7A5DD /* MapView.swift */; };
+		7296F41B238CAC43003908A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296F41A238CAC43003908A8 /* AppDelegate.swift */; };
+		7296F41D238CAC43003908A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296F41C238CAC43003908A8 /* SceneDelegate.swift */; };
+		7296F41F238CAC43003908A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296F41E238CAC43003908A8 /* ContentView.swift */; };
+		7296F421238CAC44003908A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7296F420238CAC44003908A8 /* Assets.xcassets */; };
+		7296F424238CAC44003908A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7296F423238CAC44003908A8 /* Preview Assets.xcassets */; };
+		7296F427238CAC44003908A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7296F425238CAC44003908A8 /* LaunchScreen.storyboard */; };
+		7296F432238CAC44003908A8 /* GpxParserTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296F431238CAC44003908A8 /* GpxParserTestTests.swift */; };
+		7296F43D238CAC44003908A8 /* GpxParserTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296F43C238CAC44003908A8 /* GpxParserTestUITests.swift */; };
+		77BF9B0C972893B8D849272F /* Pods_GpxParserTest_GpxParserTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9B625B19F8A282E64C9BB2 /* Pods_GpxParserTest_GpxParserTestUITests.framework */; };
+		E847F72F1C5F0770D3A84F33 /* Pods_GpxParserTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1FEA2117D6270F97251F08 /* Pods_GpxParserTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7296F42E238CAC44003908A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7296F40F238CAC43003908A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7296F416238CAC43003908A8;
+			remoteInfo = GpxParserTest;
+		};
+		7296F439238CAC44003908A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7296F40F238CAC43003908A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7296F416238CAC43003908A8;
+			remoteInfo = GpxParserTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B9B625B19F8A282E64C9BB2 /* Pods_GpxParserTest_GpxParserTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpxParserTest_GpxParserTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		169D734CD348B4B0FEC1ADD4 /* Pods-GpxParserTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTestTests.debug.xcconfig"; path = "Target Support Files/Pods-GpxParserTestTests/Pods-GpxParserTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A87356BD2AA7F0325B2B966 /* Pods-GpxParserTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTestTests.release.xcconfig"; path = "Target Support Files/Pods-GpxParserTestTests/Pods-GpxParserTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		220C7587A77FE3ED9028564C /* Pods-GpxParserTest-GpxParserTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTest-GpxParserTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-GpxParserTest-GpxParserTestUITests/Pods-GpxParserTest-GpxParserTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A56E730C4549E5328103458 /* Pods-GpxParserTest-GpxParserTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTest-GpxParserTestUITests.release.xcconfig"; path = "Target Support Files/Pods-GpxParserTest-GpxParserTestUITests/Pods-GpxParserTest-GpxParserTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34AF4488D1559470ADE1C794 /* Pods-GpxParserTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTest.debug.xcconfig"; path = "Target Support Files/Pods-GpxParserTest/Pods-GpxParserTest.debug.xcconfig"; sourceTree = "<group>"; };
+		721C123F238CB02700D22ED7 /* gapa.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gapa.gpx; sourceTree = "<group>"; };
+		7232B62B238CBFD200B7A5DD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7296F417238CAC43003908A8 /* GpxParserTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpxParserTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7296F41A238CAC43003908A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7296F41C238CAC43003908A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7296F41E238CAC43003908A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7296F420238CAC44003908A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7296F423238CAC44003908A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7296F426238CAC44003908A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7296F428238CAC44003908A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7296F42D238CAC44003908A8 /* GpxParserTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxParserTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7296F431238CAC44003908A8 /* GpxParserTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxParserTestTests.swift; sourceTree = "<group>"; };
+		7296F433238CAC44003908A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7296F438238CAC44003908A8 /* GpxParserTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpxParserTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7296F43C238CAC44003908A8 /* GpxParserTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpxParserTestUITests.swift; sourceTree = "<group>"; };
+		7296F43E238CAC44003908A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1FEA2117D6270F97251F08 /* Pods_GpxParserTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpxParserTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7910C70D5C3827DE3ECC761 /* Pods_GpxParserTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpxParserTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF55C0945001F27F06B0BC08 /* Pods-GpxParserTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpxParserTest.release.xcconfig"; path = "Target Support Files/Pods-GpxParserTest/Pods-GpxParserTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7296F414238CAC43003908A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E847F72F1C5F0770D3A84F33 /* Pods_GpxParserTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F42A238CAC44003908A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C3CB8059E079D520CAE9CA /* Pods_GpxParserTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F435238CAC44003908A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BF9B0C972893B8D849272F /* Pods_GpxParserTest_GpxParserTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7296F40E238CAC43003908A8 = {
+			isa = PBXGroup;
+			children = (
+				7296F419238CAC43003908A8 /* GpxParserTest */,
+				7296F430238CAC44003908A8 /* GpxParserTestTests */,
+				7296F43B238CAC44003908A8 /* GpxParserTestUITests */,
+				7296F418238CAC43003908A8 /* Products */,
+				BC5A002CA47862F02DC453D0 /* Pods */,
+				99789A174C900CE702AAA2D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7296F418238CAC43003908A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7296F417238CAC43003908A8 /* GpxParserTest.app */,
+				7296F42D238CAC44003908A8 /* GpxParserTestTests.xctest */,
+				7296F438238CAC44003908A8 /* GpxParserTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7296F419238CAC43003908A8 /* GpxParserTest */ = {
+			isa = PBXGroup;
+			children = (
+				721C123F238CB02700D22ED7 /* gapa.gpx */,
+				7296F41A238CAC43003908A8 /* AppDelegate.swift */,
+				7296F41C238CAC43003908A8 /* SceneDelegate.swift */,
+				7296F41E238CAC43003908A8 /* ContentView.swift */,
+				7296F420238CAC44003908A8 /* Assets.xcassets */,
+				7296F425238CAC44003908A8 /* LaunchScreen.storyboard */,
+				7296F428238CAC44003908A8 /* Info.plist */,
+				7296F422238CAC44003908A8 /* Preview Content */,
+				7232B62B238CBFD200B7A5DD /* MapView.swift */,
+			);
+			path = GpxParserTest;
+			sourceTree = "<group>";
+		};
+		7296F422238CAC44003908A8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7296F423238CAC44003908A8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7296F430238CAC44003908A8 /* GpxParserTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				7296F431238CAC44003908A8 /* GpxParserTestTests.swift */,
+				7296F433238CAC44003908A8 /* Info.plist */,
+			);
+			path = GpxParserTestTests;
+			sourceTree = "<group>";
+		};
+		7296F43B238CAC44003908A8 /* GpxParserTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7296F43C238CAC44003908A8 /* GpxParserTestUITests.swift */,
+				7296F43E238CAC44003908A8 /* Info.plist */,
+			);
+			path = GpxParserTestUITests;
+			sourceTree = "<group>";
+		};
+		99789A174C900CE702AAA2D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD1FEA2117D6270F97251F08 /* Pods_GpxParserTest.framework */,
+				0B9B625B19F8A282E64C9BB2 /* Pods_GpxParserTest_GpxParserTestUITests.framework */,
+				F7910C70D5C3827DE3ECC761 /* Pods_GpxParserTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC5A002CA47862F02DC453D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34AF4488D1559470ADE1C794 /* Pods-GpxParserTest.debug.xcconfig */,
+				FF55C0945001F27F06B0BC08 /* Pods-GpxParserTest.release.xcconfig */,
+				220C7587A77FE3ED9028564C /* Pods-GpxParserTest-GpxParserTestUITests.debug.xcconfig */,
+				2A56E730C4549E5328103458 /* Pods-GpxParserTest-GpxParserTestUITests.release.xcconfig */,
+				169D734CD348B4B0FEC1ADD4 /* Pods-GpxParserTestTests.debug.xcconfig */,
+				1A87356BD2AA7F0325B2B966 /* Pods-GpxParserTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7296F416238CAC43003908A8 /* GpxParserTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7296F441238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTest" */;
+			buildPhases = (
+				602C6724E071CA93E240873A /* [CP] Check Pods Manifest.lock */,
+				7296F413238CAC43003908A8 /* Sources */,
+				7296F414238CAC43003908A8 /* Frameworks */,
+				7296F415238CAC43003908A8 /* Resources */,
+				53419BCCE6269C2275C30433 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GpxParserTest;
+			productName = GpxParserTest;
+			productReference = 7296F417238CAC43003908A8 /* GpxParserTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7296F42C238CAC44003908A8 /* GpxParserTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7296F444238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTestTests" */;
+			buildPhases = (
+				371A2DC7C9B16713CEDA9E32 /* [CP] Check Pods Manifest.lock */,
+				7296F429238CAC44003908A8 /* Sources */,
+				7296F42A238CAC44003908A8 /* Frameworks */,
+				7296F42B238CAC44003908A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7296F42F238CAC44003908A8 /* PBXTargetDependency */,
+			);
+			name = GpxParserTestTests;
+			productName = GpxParserTestTests;
+			productReference = 7296F42D238CAC44003908A8 /* GpxParserTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7296F437238CAC44003908A8 /* GpxParserTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7296F447238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTestUITests" */;
+			buildPhases = (
+				BD9FC2D2E1D88CC4E24A917F /* [CP] Check Pods Manifest.lock */,
+				7296F434238CAC44003908A8 /* Sources */,
+				7296F435238CAC44003908A8 /* Frameworks */,
+				7296F436238CAC44003908A8 /* Resources */,
+				1C48FF047B1171134CA1204A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7296F43A238CAC44003908A8 /* PBXTargetDependency */,
+			);
+			name = GpxParserTestUITests;
+			productName = GpxParserTestUITests;
+			productReference = 7296F438238CAC44003908A8 /* GpxParserTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7296F40F238CAC43003908A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "최형우";
+				TargetAttributes = {
+					7296F416238CAC43003908A8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					7296F42C238CAC44003908A8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7296F416238CAC43003908A8;
+					};
+					7296F437238CAC44003908A8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7296F416238CAC43003908A8;
+					};
+				};
+			};
+			buildConfigurationList = 7296F412238CAC43003908A8 /* Build configuration list for PBXProject "GpxParserTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7296F40E238CAC43003908A8;
+			productRefGroup = 7296F418238CAC43003908A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7296F416238CAC43003908A8 /* GpxParserTest */,
+				7296F42C238CAC44003908A8 /* GpxParserTestTests */,
+				7296F437238CAC44003908A8 /* GpxParserTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7296F415238CAC43003908A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7296F427238CAC44003908A8 /* LaunchScreen.storyboard in Resources */,
+				7296F424238CAC44003908A8 /* Preview Assets.xcassets in Resources */,
+				721C1240238CB02700D22ED7 /* gapa.gpx in Resources */,
+				7296F421238CAC44003908A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F42B238CAC44003908A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F436238CAC44003908A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C48FF047B1171134CA1204A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest-GpxParserTestUITests/Pods-GpxParserTest-GpxParserTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest-GpxParserTestUITests/Pods-GpxParserTest-GpxParserTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest-GpxParserTestUITests/Pods-GpxParserTest-GpxParserTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		371A2DC7C9B16713CEDA9E32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GpxParserTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53419BCCE6269C2275C30433 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest/Pods-GpxParserTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest/Pods-GpxParserTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GpxParserTest/Pods-GpxParserTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		602C6724E071CA93E240873A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GpxParserTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9FC2D2E1D88CC4E24A917F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GpxParserTest-GpxParserTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7296F413238CAC43003908A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7296F41B238CAC43003908A8 /* AppDelegate.swift in Sources */,
+				7232B62C238CBFD200B7A5DD /* MapView.swift in Sources */,
+				7296F41D238CAC43003908A8 /* SceneDelegate.swift in Sources */,
+				7296F41F238CAC43003908A8 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F429238CAC44003908A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7296F432238CAC44003908A8 /* GpxParserTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7296F434238CAC44003908A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7296F43D238CAC44003908A8 /* GpxParserTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7296F42F238CAC44003908A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7296F416238CAC43003908A8 /* GpxParserTest */;
+			targetProxy = 7296F42E238CAC44003908A8 /* PBXContainerItemProxy */;
+		};
+		7296F43A238CAC44003908A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7296F416238CAC43003908A8 /* GpxParserTest */;
+			targetProxy = 7296F439238CAC44003908A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7296F425238CAC44003908A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7296F426238CAC44003908A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7296F43F238CAC44003908A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7296F440238CAC44003908A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7296F442238CAC44003908A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AF4488D1559470ADE1C794 /* Pods-GpxParserTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GpxParserTest/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GpxParserTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7296F443238CAC44003908A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF55C0945001F27F06B0BC08 /* Pods-GpxParserTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GpxParserTest/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GpxParserTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7296F445238CAC44003908A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169D734CD348B4B0FEC1ADD4 /* Pods-GpxParserTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GpxParserTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GpxParserTest.app/GpxParserTest";
+			};
+			name = Debug;
+		};
+		7296F446238CAC44003908A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A87356BD2AA7F0325B2B966 /* Pods-GpxParserTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GpxParserTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GpxParserTest.app/GpxParserTest";
+			};
+			name = Release;
+		};
+		7296F448238CAC44003908A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220C7587A77FE3ED9028564C /* Pods-GpxParserTest-GpxParserTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GpxParserTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GpxParserTest;
+			};
+			name = Debug;
+		};
+		7296F449238CAC44003908A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A56E730C4549E5328103458 /* Pods-GpxParserTest-GpxParserTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GpxParserTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GpxParserTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GpxParserTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7296F412238CAC43003908A8 /* Build configuration list for PBXProject "GpxParserTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7296F43F238CAC44003908A8 /* Debug */,
+				7296F440238CAC44003908A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7296F441238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7296F442238CAC44003908A8 /* Debug */,
+				7296F443238CAC44003908A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7296F444238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7296F445238CAC44003908A8 /* Debug */,
+				7296F446238CAC44003908A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7296F447238CAC44003908A8 /* Build configuration list for PBXNativeTarget "GpxParserTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7296F448238CAC44003908A8 /* Debug */,
+				7296F449238CAC44003908A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7296F40F238CAC43003908A8 /* Project object */;
+}
