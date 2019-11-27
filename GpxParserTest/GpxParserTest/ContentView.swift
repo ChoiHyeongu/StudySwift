@@ -12,7 +12,7 @@ import CoreLocation
 
 struct ContentView: View {
     
-    let gpx = GPXParser(withPath: "/Users/choihyeongu/StudySwift/GpxParserTest/GpxParserTest/gapa.gpx")?.parsedData()
+    let gpx = GPXParser(withPath: "/Users/motivation/StudySwift/GpxParserTest/GpxParserTest/gapa.gpx")?.parsedData()
     
     @State var tracks = [GPXTrack]()
     @State var waypoints = [GPXWaypoint]()
@@ -32,23 +32,20 @@ struct ContentView: View {
                 print (self.tracks.count)
             
                 for waypoint in self.waypoints {
-                    print("waypoint-latitude: \(waypoint.latitude ?? 0)")
-                    print("waypoint-longitude: \(waypoint.longitude ?? 0)")
-                    print("waypoint-date: \(waypoint.time ?? Date())")
+                    print("MapData waypoint-latitude: \(waypoint.latitude ?? 0)")
+                    print("MapData waypoint-longitude: \(waypoint.longitude ?? 0)")
+                    print("MapData waypoint-date: \(waypoint.time ?? Date())")
                 }
                 
                 for track in self.tracks {
                     for tracksegment in track.tracksegments {
                         for trackpoint in tracksegment.trackpoints {
-                            var speed = trackpoint.extensions!["gpx10:speed"]
-                            print("speed: \(speed)")
-                            print("speed: \(speed.gpx())")
-                            print("speed: \(speed.children.endIndex)")
-                            print("speed: \(speed.name)")
-                            print("speed: \(speed)")
-//                            print("trackpoint-latitude: \(trackpoint.latitude ?? 0)")
-//                            print("trackpoint-longitude: \(trackpoint.longitude ?? 0)")
-//                            print("trackpoint-date: \(trackpoint.time ?? Date())")
+                            let speed = trackpoint.extensions!["gpx10:speed"]
+                            print("MapData speed: \(String(describing: speed.text))")
+                            print("MapData trackpoint-latitude: \(trackpoint.latitude ?? 0)")
+                            print("MapData trackpoint-longitude: \(trackpoint.longitude ?? 0)")
+                            print("MapData trackpoint-date: \(trackpoint.time ?? Date())")
+                            print("======================================================")
                             self.coordinates.append(CLLocationCoordinate2D(latitude: trackpoint.latitude!, longitude: trackpoint.longitude!))
                         }
                     }

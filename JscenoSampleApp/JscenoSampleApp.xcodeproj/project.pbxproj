@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF56DCCB238E3A1000B170E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */; };
+		FF56DCCD238E3A1000B170E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */; };
+		FF56DCCF238E3A1000B170E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCE238E3A1000B170E4 /* ContentView.swift */; };
+		FF56DCD1238E3A1300B170E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD0238E3A1300B170E4 /* Assets.xcassets */; };
+		FF56DCD4238E3A1300B170E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */; };
+		FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */; };
+		FF56DCE2238E3A1300B170E4 /* JscenoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */; };
+		FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF56DCDE238E3A1300B170E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF56DCBF238E3A1000B170E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF56DCC6238E3A1000B170E4;
+			remoteInfo = JscenoSampleApp;
+		};
+		FF56DCE9238E3A1300B170E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF56DCBF238E3A1000B170E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF56DCC6238E3A1000B170E4;
+			remoteInfo = JscenoSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JscenoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF56DCCE238E3A1000B170E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF56DCD0238E3A1300B170E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF56DCD6238E3A1300B170E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF56DCD8238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppTests.swift; sourceTree = "<group>"; };
+		FF56DCE3238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppUITests.swift; sourceTree = "<group>"; };
+		FF56DCEE238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF56DCC4238E3A1000B170E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCDA238E3A1300B170E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCE5238E3A1300B170E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF56DCBE238E3A1000B170E4 = {
+			isa = PBXGroup;
+			children = (
+				FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */,
+				FF56DCE0238E3A1300B170E4 /* JscenoSampleAppTests */,
+				FF56DCEB238E3A1300B170E4 /* JscenoSampleAppUITests */,
+				FF56DCC8238E3A1000B170E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF56DCC8238E3A1000B170E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */,
+				FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */,
+				FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */,
+				FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */,
+				FF56DCCE238E3A1000B170E4 /* ContentView.swift */,
+				FF56DCD0238E3A1300B170E4 /* Assets.xcassets */,
+				FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */,
+				FF56DCD8238E3A1300B170E4 /* Info.plist */,
+				FF56DCD2238E3A1300B170E4 /* Preview Content */,
+			);
+			path = JscenoSampleApp;
+			sourceTree = "<group>";
+		};
+		FF56DCD2238E3A1300B170E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF56DCE0238E3A1300B170E4 /* JscenoSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */,
+				FF56DCE3238E3A1300B170E4 /* Info.plist */,
+			);
+			path = JscenoSampleAppTests;
+			sourceTree = "<group>";
+		};
+		FF56DCEB238E3A1300B170E4 /* JscenoSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */,
+				FF56DCEE238E3A1300B170E4 /* Info.plist */,
+			);
+			path = JscenoSampleAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF56DCF1238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */;
+			buildPhases = (
+				FF56DCC3238E3A1000B170E4 /* Sources */,
+				FF56DCC4238E3A1000B170E4 /* Frameworks */,
+				FF56DCC5238E3A1000B170E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JscenoSampleApp;
+			productName = JscenoSampleApp;
+			productReference = FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF56DCDC238E3A1300B170E4 /* JscenoSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF56DCF4238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */;
+			buildPhases = (
+				FF56DCD9238E3A1300B170E4 /* Sources */,
+				FF56DCDA238E3A1300B170E4 /* Frameworks */,
+				FF56DCDB238E3A1300B170E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF56DCDF238E3A1300B170E4 /* PBXTargetDependency */,
+			);
+			name = JscenoSampleAppTests;
+			productName = JscenoSampleAppTests;
+			productReference = FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF56DCE7238E3A1300B170E4 /* JscenoSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF56DCF7238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */;
+			buildPhases = (
+				FF56DCE4238E3A1300B170E4 /* Sources */,
+				FF56DCE5238E3A1300B170E4 /* Frameworks */,
+				FF56DCE6238E3A1300B170E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF56DCEA238E3A1300B170E4 /* PBXTargetDependency */,
+			);
+			name = JscenoSampleAppUITests;
+			productName = JscenoSampleAppUITests;
+			productReference = FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF56DCBF238E3A1000B170E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Choi;
+				TargetAttributes = {
+					FF56DCC6238E3A1000B170E4 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					FF56DCDC238E3A1300B170E4 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FF56DCC6238E3A1000B170E4;
+					};
+					FF56DCE7238E3A1300B170E4 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FF56DCC6238E3A1000B170E4;
+					};
+				};
+			};
+			buildConfigurationList = FF56DCC2238E3A1000B170E4 /* Build configuration list for PBXProject "JscenoSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF56DCBE238E3A1000B170E4;
+			productRefGroup = FF56DCC8238E3A1000B170E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */,
+				FF56DCDC238E3A1300B170E4 /* JscenoSampleAppTests */,
+				FF56DCE7238E3A1300B170E4 /* JscenoSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF56DCC5238E3A1000B170E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */,
+				FF56DCD4238E3A1300B170E4 /* Preview Assets.xcassets in Resources */,
+				FF56DCD1238E3A1300B170E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCDB238E3A1300B170E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCE6238E3A1300B170E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF56DCC3238E3A1000B170E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF56DCCB238E3A1000B170E4 /* AppDelegate.swift in Sources */,
+				FF56DCCD238E3A1000B170E4 /* SceneDelegate.swift in Sources */,
+				FF56DCCF238E3A1000B170E4 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCD9238E3A1300B170E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF56DCE2238E3A1300B170E4 /* JscenoSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF56DCE4238E3A1300B170E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF56DCDF238E3A1300B170E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */;
+			targetProxy = FF56DCDE238E3A1300B170E4 /* PBXContainerItemProxy */;
+		};
+		FF56DCEA238E3A1300B170E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */;
+			targetProxy = FF56DCE9238E3A1300B170E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF56DCD6238E3A1300B170E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF56DCEF238E3A1300B170E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF56DCF0238E3A1300B170E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF56DCF2238E3A1300B170E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JscenoSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JscenoSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF56DCF3238E3A1300B170E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JscenoSampleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JscenoSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF56DCF5238E3A1300B170E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = JscenoSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JscenoSampleApp.app/JscenoSampleApp";
+			};
+			name = Debug;
+		};
+		FF56DCF6238E3A1300B170E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = JscenoSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JscenoSampleApp.app/JscenoSampleApp";
+			};
+			name = Release;
+		};
+		FF56DCF8238E3A1300B170E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = JscenoSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JscenoSampleApp;
+			};
+			name = Debug;
+		};
+		FF56DCF9238E3A1300B170E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = JscenoSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.JscenoSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JscenoSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF56DCC2238E3A1000B170E4 /* Build configuration list for PBXProject "JscenoSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56DCEF238E3A1300B170E4 /* Debug */,
+				FF56DCF0238E3A1300B170E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF56DCF1238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56DCF2238E3A1300B170E4 /* Debug */,
+				FF56DCF3238E3A1300B170E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF56DCF4238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56DCF5238E3A1300B170E4 /* Debug */,
+				FF56DCF6238E3A1300B170E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF56DCF7238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF56DCF8238E3A1300B170E4 /* Debug */,
+				FF56DCF9238E3A1300B170E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF56DCBF238E3A1000B170E4 /* Project object */;
+}
