@@ -15,6 +15,8 @@
 		FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */; };
 		FF56DCE2238E3A1300B170E4 /* JscenoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */; };
 		FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */; };
+		FF5BE244238F69B5004224E7 /* GPXRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE243238F69B5004224E7 /* GPXRow.swift */; };
+		FF5BE246238F6A01004224E7 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE245238F6A01004224E7 /* GPX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppUITests.swift; sourceTree = "<group>"; };
 		FF56DCEE238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5BE243238F69B5004224E7 /* GPXRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRow.swift; sourceTree = "<group>"; };
+		FF5BE245238F6A01004224E7 /* GPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF5BE243238F69B5004224E7 /* GPXRow.swift */,
 				FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */,
 				FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */,
 				FF56DCCE238E3A1000B170E4 /* ContentView.swift */,
@@ -106,6 +111,7 @@
 				FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */,
 				FF56DCD8238E3A1300B170E4 /* Info.plist */,
 				FF56DCD2238E3A1300B170E4 /* Preview Content */,
+				FF5BE245238F6A01004224E7 /* GPX.swift */,
 			);
 			path = JscenoSampleApp;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 			files = (
 				FF56DCCB238E3A1000B170E4 /* AppDelegate.swift in Sources */,
 				FF56DCCD238E3A1000B170E4 /* SceneDelegate.swift in Sources */,
+				FF5BE244238F69B5004224E7 /* GPXRow.swift in Sources */,
 				FF56DCCF238E3A1000B170E4 /* ContentView.swift in Sources */,
+				FF5BE246238F6A01004224E7 /* GPX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
