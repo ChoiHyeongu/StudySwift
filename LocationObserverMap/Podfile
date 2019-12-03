@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'LocationObserverMap' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'CoreGPX'
+  # Pods for LocationObserverMap
+
+  target 'LocationObserverMapTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'LocationObserverMapUITests' do
+    # Pods for testing
+  end
+
+end

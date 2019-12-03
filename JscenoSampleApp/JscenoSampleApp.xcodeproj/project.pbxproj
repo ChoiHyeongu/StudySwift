@@ -17,6 +17,7 @@
 		FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */; };
 		FF5BE244238F69B5004224E7 /* GPXRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE243238F69B5004224E7 /* GPXRow.swift */; };
 		FF5BE246238F6A01004224E7 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE245238F6A01004224E7 /* GPX.swift */; };
+		FF95AC4E239134F6004C342F /* gpxData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF95AC4D239134F6004C342F /* gpxData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FF56DCEE238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5BE243238F69B5004224E7 /* GPXRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRow.swift; sourceTree = "<group>"; };
 		FF5BE245238F6A01004224E7 /* GPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
+		FF95AC4D239134F6004C342F /* gpxData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gpxData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF95AC4C23913497004C342F /* Resources */,
 				FF5BE243238F69B5004224E7 /* GPXRow.swift */,
 				FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */,
 				FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */,
@@ -140,6 +143,14 @@
 				FF56DCEE238E3A1300B170E4 /* Info.plist */,
 			);
 			path = JscenoSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		FF95AC4C23913497004C342F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF95AC4D239134F6004C342F /* gpxData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */,
+				FF95AC4E239134F6004C342F /* gpxData.json in Resources */,
 				FF56DCD4238E3A1300B170E4 /* Preview Assets.xcassets in Resources */,
 				FF56DCD1238E3A1300B170E4 /* Assets.xcassets in Resources */,
 			);

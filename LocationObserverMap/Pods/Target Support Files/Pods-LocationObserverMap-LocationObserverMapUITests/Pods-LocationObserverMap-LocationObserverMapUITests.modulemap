@@ -1,0 +1,6 @@
+framework module Pods_LocationObserverMap_LocationObserverMapUITests {
+  umbrella header "Pods-LocationObserverMap-LocationObserverMapUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,7 +14,9 @@ struct GPXRow: View {
     
     var body: some View {
         HStack{
-            gpx.onwer
+            List{
+                    
+            }
         }
     }
 }

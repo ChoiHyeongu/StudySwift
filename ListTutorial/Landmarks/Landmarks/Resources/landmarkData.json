@@ -1,17 +1,4 @@
-[
-    {
-        "name": "Turtle Rock",
-        "category": "Featured",
-        "city": "Twentynine Palms",
-        "state": "California",
-        "id": 1001,
-        "park": "Joshua Tree National Park",
-        "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
-        },
-        "imageName": "turtlerock"
-    },
+.
     {
         "name": "Silver Salmon Creek",
         "category": "Lakes",

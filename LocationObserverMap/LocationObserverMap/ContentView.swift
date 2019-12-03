@@ -9,7 +9,6 @@ import SwiftUI
 import CoreLocation
 
 struct ContentView: View {
-    @State var isStart = true
     @ObservedObject var locationObserver = LocationObserver()
     
     let screenSize: CGRect = UIScreen.main.bounds
@@ -18,18 +17,11 @@ struct ContentView: View {
         ZStack {
             MapView(
                 coordinate: self.locationObserver.location.coordinate,
-                coordinates: self.locationObserver.coordinates,
-                isStart: self.isStart
+                coordinates: self.locationObserver.coordinates
             ).edgesIgnoringSafeArea(.all)
             
-            Button(action: {
-                if self.isStart {
-                    self.isStart = false
-                } else {
-                    self.isStart = true
-                }
-            }) {
-                Text(!self.isStart ? "Start" : "Stop")
+            Button(action: {self.locationObserver.toggleIsStart()}) {
+                Text(!self.locationObserver.isStart ? "Start" : "Stop")
                     .fontWeight(.bold)
                     .font(.title)
                     .padding()
