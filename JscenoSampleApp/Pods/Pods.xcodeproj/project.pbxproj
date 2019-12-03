@@ -1,0 +1,1066 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121C9B660C6E3098A7845B703394CAC3 /* GPXEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3D9DCE2A73505AEFE6A46F9EF3B1F /* GPXEmail.swift */; };
+		12A4F543E8F6075CB78F5E9A22174DD4 /* GPXRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B06D926E1EAD7AB1221A4CBDC44B21 /* GPXRoot.swift */; };
+		1793B17745CFA3BD2DA23E8DC712374E /* Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F54184E0A1F0208A8DD624F1E146CA1D /* Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		187EA816CB37F63944DA8BCE327FCAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1A46A24AA2193E4690BE8CB385C0EDDF /* GPXPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B6038A3E942A3EE8C938E44B3DFF03 /* GPXPoint.swift */; };
+		1FCDDAC183B28480FC23DA212503D1FB /* GPXLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F9AAB5C5720F44BBB4BB9FE340D928 /* GPXLink.swift */; };
+		33C8FA92663EAB1F770CAC5415982CBA /* GPXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E892C1DDC96AD4C20D7E7DDE75BF5 /* GPXError.swift */; };
+		39965687D3A6D952BAE161BA7F930B12 /* GPXFix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4944CD69B4EF008EFCF621B471DB7C /* GPXFix.swift */; };
+		43F59F585B6C0A2F672AA463DEB0100C /* Pods-JscenoSampleAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E89240B0DC0F8CABE0BBEF09D133A8B /* Pods-JscenoSampleAppTests-dummy.m */; };
+		4B74C09F5C2C346208B6AB6156BA863C /* NSMutableString+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C408B42F7D27FA4600BF8B68D1C6B /* NSMutableString+XML.swift */; };
+		5AF39F409767E7C90C0FCF9178DE5E5A /* Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CABD095653112A026AADD2DEF28B8AF2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m */; };
+		84BF35209D50580CC0ED603E6A8D53EC /* GPXPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77EF1B81409DB89DBAABE937149CC4 /* GPXPerson.swift */; };
+		86BEFA255E23539EE7397EFBA49D16A7 /* GPXMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BEC9B48BAB634FC48A014C7E8A205 /* GPXMetadata.swift */; };
+		8D8D9D554A317A25A47D7EF7DF430682 /* GPXTrackPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD9AB09B2CAA65B73A397A90E52F05C /* GPXTrackPoint.swift */; };
+		A3105C27DB1D32988578815C55FA68DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A83806762E319E40E3DBF394C2DE30E1 /* GPXElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3385AC455EC5D85F40B708381E2562B /* GPXElement.swift */; };
+		A9EA64CD9045D1D654399B4C006C6417 /* GPXRawElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E367722797D14CBCA6A456DCDA59A86 /* GPXRawElement.swift */; };
+		AEA0EC3FFC66BEA75D51F569ABC3AEA4 /* GPXAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FC5081014A4574DF5D0A145D8DB219 /* GPXAuthor.swift */; };
+		B4AE21702D7F964D961F0BDB3C82018D /* GPXRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90B8F0F18019E6D1B47F8162464AAA /* GPXRoute.swift */; };
+		B55635BB6474EDE9558A7BF4C18CEEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BB206BBC5AF051F94060680175C55169 /* GPXPointSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C640E68D0695FEA92E8DEFE96317A /* GPXPointSegment.swift */; };
+		BB3C1AAD64F340707206260392A3A530 /* GPXExtensionsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A84166380E3C94A2455D4A4FFCCA2 /* GPXExtensionsElement.swift */; };
+		BC688B3D6457FA447D87F7D5D5564CB0 /* GPXTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328E9A455F4337521CD8D4295ED409E7 /* GPXTrack.swift */; };
+		BCBEAD079BEF642220A422979FDCEFED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C162CBAC46E6F482E40511E5DCFC9CBF /* GPXRoutePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AFBF36D698875C42CA962BA3BE1323 /* GPXRoutePoint.swift */; };
+		C17B5257CE81FCA8F9387D3D4183C9DD /* Pods-JscenoSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 789732AB23E90EF0CB2E91436B5AEC51 /* Pods-JscenoSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C62AB8F8030F04307350FE8018C08723 /* GPXWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0E69FF65C3E4A227B0E80AF197767 /* GPXWaypoint.swift */; };
+		C8E23FEC1FD76202575BA8E37F06E24F /* CoreGPX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 551F11DE7352796944754742C7417928 /* CoreGPX-dummy.m */; };
+		D1A21CA56ED0679369CE2ED5C0AE4515 /* GPXBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE75F2A5CD81C9B9D61CB650D4D1F1FA /* GPXBounds.swift */; };
+		D3D231655AE41A8C6035B86F3A1FFB7E /* Pods-JscenoSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B8C343497D94729D407F206EF51E5F /* Pods-JscenoSampleApp-dummy.m */; };
+		D653237DF7B1541474AC732CB58FB2F3 /* GPXExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D3CBFBD9B317C0AA2A054D4C916C4 /* GPXExtensions.swift */; };
+		D7139A31778CF87D3CFE4DCE701A9C3A /* GPXParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A33B00F7691772A19E825E584D6C66 /* GPXParser.swift */; };
+		EB511DB00C4FFE5E9FC91B3596032F0E /* CoreGPX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E84519E713F93B6DA093269B22667592 /* CoreGPX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE35A401CC416AE1E81316988E775DB3 /* GPXTrackSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEAD2289F9A819E58FF45D5D911694 /* GPXTrackSegment.swift */; };
+		F3AE49D6C834903DF6D2205174DE9671 /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FB751FB1E8C50C6678EA6413CF4E8 /* Converters.swift */; };
+		F941708C0FA178143D65EC7D8268AC88 /* GPXCopyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD6FEF8B9DCB311CD01B4A29EF10BF /* GPXCopyright.swift */; };
+		F954F1AB37B1374C306F9C10E4C0DFF3 /* DateTimeParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A686882C6A5A5C6B6B85E400F6D572 /* DateTimeParsers.swift */; };
+		FE7673514AD6D856B4171CDFFF0FA9FB /* Pods-JscenoSampleAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B51350EFD2D46038AD7D02880F64E031 /* Pods-JscenoSampleAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D64515D5F812D862D94276CB1B736B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B62176F3EBD4B4AE58AB7599BBA316;
+			remoteInfo = "Pods-JscenoSampleApp";
+		};
+		BF1DA958D878B812A73A3B288648E9A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493735E92C5B6068F445B48D0CA7B736;
+			remoteInfo = CoreGPX;
+		};
+		DC2DE169E9DF8BEEE2E1B5EE36648D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493735E92C5B6068F445B48D0CA7B736;
+			remoteInfo = CoreGPX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B5C408B42F7D27FA4600BF8B68D1C6B /* NSMutableString+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableString+XML.swift"; path = "Classes/NSMutableString+XML.swift"; sourceTree = "<group>"; };
+		0D90B8F0F18019E6D1B47F8162464AAA /* GPXRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXRoute.swift; path = Classes/GPXRoute.swift; sourceTree = "<group>"; };
+		14F9AAB5C5720F44BBB4BB9FE340D928 /* GPXLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXLink.swift; path = Classes/GPXLink.swift; sourceTree = "<group>"; };
+		1C2A91450EB9B2A16C98B9415CB744DF /* Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		21C691FE9F49068A59E0923660CE515E /* Pods-JscenoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		22A33B00F7691772A19E825E584D6C66 /* GPXParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXParser.swift; path = Classes/GPXParser.swift; sourceTree = "<group>"; };
+		254F087C526501ACD6A28EAE03D18253 /* CoreGPX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreGPX.xcconfig; sourceTree = "<group>"; };
+		26AFBF36D698875C42CA962BA3BE1323 /* GPXRoutePoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXRoutePoint.swift; path = Classes/GPXRoutePoint.swift; sourceTree = "<group>"; };
+		2703CFF650AA02399567CC1DF88CDBCF /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JscenoSampleApp_JscenoSampleAppUITests.framework; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273DE213034230D3449362768B2C2E93 /* Pods-JscenoSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JscenoSampleApp.modulemap"; sourceTree = "<group>"; };
+		2B4BEC9B48BAB634FC48A014C7E8A205 /* GPXMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXMetadata.swift; path = Classes/GPXMetadata.swift; sourceTree = "<group>"; };
+		2E89240B0DC0F8CABE0BBEF09D133A8B /* Pods-JscenoSampleAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JscenoSampleAppTests-dummy.m"; sourceTree = "<group>"; };
+		31A686882C6A5A5C6B6B85E400F6D572 /* DateTimeParsers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeParsers.swift; path = Classes/DateTimeParsers.swift; sourceTree = "<group>"; };
+		31AEAD2289F9A819E58FF45D5D911694 /* GPXTrackSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXTrackSegment.swift; path = Classes/GPXTrackSegment.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		328E9A455F4337521CD8D4295ED409E7 /* GPXTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXTrack.swift; path = Classes/GPXTrack.swift; sourceTree = "<group>"; };
+		37FC5081014A4574DF5D0A145D8DB219 /* GPXAuthor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXAuthor.swift; path = Classes/GPXAuthor.swift; sourceTree = "<group>"; };
+		39DDB450796F876DAC2BB285CCE789F1 /* Pods-JscenoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		3BC34F253E5F31AE7F50946447D6C2A4 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DBB832B60EC921305528506F255FC2D /* Pods_JscenoSampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JscenoSampleAppTests.framework; path = "Pods-JscenoSampleAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BD6FEF8B9DCB311CD01B4A29EF10BF /* GPXCopyright.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXCopyright.swift; path = Classes/GPXCopyright.swift; sourceTree = "<group>"; };
+		551F11DE7352796944754742C7417928 /* CoreGPX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreGPX-dummy.m"; sourceTree = "<group>"; };
+		5E367722797D14CBCA6A456DCDA59A86 /* GPXRawElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXRawElement.swift; path = Classes/GPXRawElement.swift; sourceTree = "<group>"; };
+		61B0E69FF65C3E4A227B0E80AF197767 /* GPXWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXWaypoint.swift; path = Classes/GPXWaypoint.swift; sourceTree = "<group>"; };
+		61E9751427284E9998F0B57561FA1F75 /* Pods-JscenoSampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleApp-Info.plist"; sourceTree = "<group>"; };
+		68676CD591957EA4525B4B03D1CF22AD /* CoreGPX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreGPX.framework; path = CoreGPX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789732AB23E90EF0CB2E91436B5AEC51 /* Pods-JscenoSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JscenoSampleApp-umbrella.h"; sourceTree = "<group>"; };
+		7B8B672C17BA834289B142A77EE1AC07 /* Pods_JscenoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JscenoSampleApp.framework; path = "Pods-JscenoSampleApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B91CD2A4DF365461FAEC25FD9921585 /* Pods-JscenoSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D8FB751FB1E8C50C6678EA6413CF4E8 /* Converters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Converters.swift; path = Classes/Converters.swift; sourceTree = "<group>"; };
+		7E2E2A1F75EA6867C0BE73AAB05B4C3C /* Pods-JscenoSampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		815C73F43E40237CB3142162C750598A /* Pods-JscenoSampleAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JscenoSampleAppTests.modulemap"; sourceTree = "<group>"; };
+		8292B15DAB47A541CEC45F81F6F186F0 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		92770C6CFA6116F0B92681834B183571 /* CoreGPX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreGPX.modulemap; sourceTree = "<group>"; };
+		92A3D9DCE2A73505AEFE6A46F9EF3B1F /* GPXEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXEmail.swift; path = Classes/GPXEmail.swift; sourceTree = "<group>"; };
+		9B4944CD69B4EF008EFCF621B471DB7C /* GPXFix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXFix.swift; path = Classes/GPXFix.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6B06D926E1EAD7AB1221A4CBDC44B21 /* GPXRoot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXRoot.swift; path = Classes/GPXRoot.swift; sourceTree = "<group>"; };
+		B3BF823803CCFBB2FC3CA84A550F20E2 /* Pods-JscenoSampleAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JscenoSampleAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B51350EFD2D46038AD7D02880F64E031 /* Pods-JscenoSampleAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JscenoSampleAppTests-umbrella.h"; sourceTree = "<group>"; };
+		BB53F0BC3C18BC5592273F31F8FF0F54 /* Pods-JscenoSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JscenoSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8B8C343497D94729D407F206EF51E5F /* Pods-JscenoSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JscenoSampleApp-dummy.m"; sourceTree = "<group>"; };
+		CABD095653112A026AADD2DEF28B8AF2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m"; sourceTree = "<group>"; };
+		CE4D3CBFBD9B317C0AA2A054D4C916C4 /* GPXExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXExtensions.swift; path = Classes/GPXExtensions.swift; sourceTree = "<group>"; };
+		CEFAAF43F3AF5021B2F977AEFB18D6F7 /* Pods-JscenoSampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JscenoSampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		D05C640E68D0695FEA92E8DEFE96317A /* GPXPointSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXPointSegment.swift; path = Classes/GPXPointSegment.swift; sourceTree = "<group>"; };
+		D13A84166380E3C94A2455D4A4FFCCA2 /* GPXExtensionsElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXExtensionsElement.swift; path = Classes/GPXExtensionsElement.swift; sourceTree = "<group>"; };
+		D44C9199C9D3EDC14FB034B1A737D2CA /* Pods-JscenoSampleAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleAppTests-Info.plist"; sourceTree = "<group>"; };
+		D9F036E8BAF527EB77B91EFE4F7347B2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests.modulemap"; sourceTree = "<group>"; };
+		DD3AE5C7AFD200468C52F4410923ACD1 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDF03ABAB056AD380CEABBDCA698EFA7 /* CoreGPX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreGPX-prefix.pch"; sourceTree = "<group>"; };
+		DFA1F61CAF3DF13502668E68F44CB56F /* Pods-JscenoSampleAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFD9AB09B2CAA65B73A397A90E52F05C /* GPXTrackPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXTrackPoint.swift; path = Classes/GPXTrackPoint.swift; sourceTree = "<group>"; };
+		E1B7F350ACCB85389AC1AE87F948023D /* Pods-JscenoSampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E702044348F631B4459671C197FDC58B /* CoreGPX-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreGPX-Info.plist"; sourceTree = "<group>"; };
+		E84519E713F93B6DA093269B22667592 /* CoreGPX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreGPX-umbrella.h"; sourceTree = "<group>"; };
+		F3385AC455EC5D85F40B708381E2562B /* GPXElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXElement.swift; path = Classes/GPXElement.swift; sourceTree = "<group>"; };
+		F45E892C1DDC96AD4C20D7E7DDE75BF5 /* GPXError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXError.swift; path = Classes/GPXError.swift; sourceTree = "<group>"; };
+		F54184E0A1F0208A8DD624F1E146CA1D /* Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		F7B6038A3E942A3EE8C938E44B3DFF03 /* GPXPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXPoint.swift; path = Classes/GPXPoint.swift; sourceTree = "<group>"; };
+		F7CD3BE3CCACAFAB6BAFBABBA0F35D97 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests-Info.plist"; sourceTree = "<group>"; };
+		FA77EF1B81409DB89DBAABE937149CC4 /* GPXPerson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXPerson.swift; path = Classes/GPXPerson.swift; sourceTree = "<group>"; };
+		FC61438233A2E88F13749AA4BCC683A2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE75F2A5CD81C9B9D61CB650D4D1F1FA /* GPXBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPXBounds.swift; path = Classes/GPXBounds.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F373FB3F46C0BD58E2FD88BB84B9159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55635BB6474EDE9558A7BF4C18CEEFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C2937BCD072CE9BDAF220B4877E349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBEAD079BEF642220A422979FDCEFED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D910DC27C90507645FEAA79DBA935F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3105C27DB1D32988578815C55FA68DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20D67290A5ADC0EE37A6F81C89F0B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187EA816CB37F63944DA8BCE327FCAFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E997D66DA4E88861D8B38A768A80AE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92770C6CFA6116F0B92681834B183571 /* CoreGPX.modulemap */,
+				254F087C526501ACD6A28EAE03D18253 /* CoreGPX.xcconfig */,
+				551F11DE7352796944754742C7417928 /* CoreGPX-dummy.m */,
+				E702044348F631B4459671C197FDC58B /* CoreGPX-Info.plist */,
+				DDF03ABAB056AD380CEABBDCA698EFA7 /* CoreGPX-prefix.pch */,
+				E84519E713F93B6DA093269B22667592 /* CoreGPX-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CoreGPX";
+			sourceTree = "<group>";
+		};
+		17ECB9942F537D76C56E503A310D1AE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71B08DBFA51C876963A49B7983CB3CE1 /* CoreGPX */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1FC7DCABAF117AA88F62905AC1802874 /* Pods-JscenoSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				273DE213034230D3449362768B2C2E93 /* Pods-JscenoSampleApp.modulemap */,
+				BB53F0BC3C18BC5592273F31F8FF0F54 /* Pods-JscenoSampleApp-acknowledgements.markdown */,
+				7B91CD2A4DF365461FAEC25FD9921585 /* Pods-JscenoSampleApp-acknowledgements.plist */,
+				C8B8C343497D94729D407F206EF51E5F /* Pods-JscenoSampleApp-dummy.m */,
+				CEFAAF43F3AF5021B2F977AEFB18D6F7 /* Pods-JscenoSampleApp-frameworks.sh */,
+				61E9751427284E9998F0B57561FA1F75 /* Pods-JscenoSampleApp-Info.plist */,
+				789732AB23E90EF0CB2E91436B5AEC51 /* Pods-JscenoSampleApp-umbrella.h */,
+				21C691FE9F49068A59E0923660CE515E /* Pods-JscenoSampleApp.debug.xcconfig */,
+				39DDB450796F876DAC2BB285CCE789F1 /* Pods-JscenoSampleApp.release.xcconfig */,
+			);
+			name = "Pods-JscenoSampleApp";
+			path = "Target Support Files/Pods-JscenoSampleApp";
+			sourceTree = "<group>";
+		};
+		4073B9B9E227EE812070E8C25D083464 /* Pods-JscenoSampleApp-JscenoSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F036E8BAF527EB77B91EFE4F7347B2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.modulemap */,
+				3BC34F253E5F31AE7F50946447D6C2A4 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.markdown */,
+				8292B15DAB47A541CEC45F81F6F186F0 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-acknowledgements.plist */,
+				CABD095653112A026AADD2DEF28B8AF2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m */,
+				1C2A91450EB9B2A16C98B9415CB744DF /* Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks.sh */,
+				F7CD3BE3CCACAFAB6BAFBABBA0F35D97 /* Pods-JscenoSampleApp-JscenoSampleAppUITests-Info.plist */,
+				F54184E0A1F0208A8DD624F1E146CA1D /* Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h */,
+				FC61438233A2E88F13749AA4BCC683A2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */,
+				DD3AE5C7AFD200468C52F4410923ACD1 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */,
+			);
+			name = "Pods-JscenoSampleApp-JscenoSampleAppUITests";
+			path = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests";
+			sourceTree = "<group>";
+		};
+		68170631C6AF0A9C646BF9D8AC42617A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC7DCABAF117AA88F62905AC1802874 /* Pods-JscenoSampleApp */,
+				4073B9B9E227EE812070E8C25D083464 /* Pods-JscenoSampleApp-JscenoSampleAppUITests */,
+				F974A5E0D5BE7DC32A086070FFE76FA1 /* Pods-JscenoSampleAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		71B08DBFA51C876963A49B7983CB3CE1 /* CoreGPX */ = {
+			isa = PBXGroup;
+			children = (
+				7D8FB751FB1E8C50C6678EA6413CF4E8 /* Converters.swift */,
+				31A686882C6A5A5C6B6B85E400F6D572 /* DateTimeParsers.swift */,
+				37FC5081014A4574DF5D0A145D8DB219 /* GPXAuthor.swift */,
+				FE75F2A5CD81C9B9D61CB650D4D1F1FA /* GPXBounds.swift */,
+				50BD6FEF8B9DCB311CD01B4A29EF10BF /* GPXCopyright.swift */,
+				F3385AC455EC5D85F40B708381E2562B /* GPXElement.swift */,
+				92A3D9DCE2A73505AEFE6A46F9EF3B1F /* GPXEmail.swift */,
+				F45E892C1DDC96AD4C20D7E7DDE75BF5 /* GPXError.swift */,
+				CE4D3CBFBD9B317C0AA2A054D4C916C4 /* GPXExtensions.swift */,
+				D13A84166380E3C94A2455D4A4FFCCA2 /* GPXExtensionsElement.swift */,
+				9B4944CD69B4EF008EFCF621B471DB7C /* GPXFix.swift */,
+				14F9AAB5C5720F44BBB4BB9FE340D928 /* GPXLink.swift */,
+				2B4BEC9B48BAB634FC48A014C7E8A205 /* GPXMetadata.swift */,
+				22A33B00F7691772A19E825E584D6C66 /* GPXParser.swift */,
+				FA77EF1B81409DB89DBAABE937149CC4 /* GPXPerson.swift */,
+				F7B6038A3E942A3EE8C938E44B3DFF03 /* GPXPoint.swift */,
+				D05C640E68D0695FEA92E8DEFE96317A /* GPXPointSegment.swift */,
+				5E367722797D14CBCA6A456DCDA59A86 /* GPXRawElement.swift */,
+				A6B06D926E1EAD7AB1221A4CBDC44B21 /* GPXRoot.swift */,
+				0D90B8F0F18019E6D1B47F8162464AAA /* GPXRoute.swift */,
+				26AFBF36D698875C42CA962BA3BE1323 /* GPXRoutePoint.swift */,
+				328E9A455F4337521CD8D4295ED409E7 /* GPXTrack.swift */,
+				DFD9AB09B2CAA65B73A397A90E52F05C /* GPXTrackPoint.swift */,
+				31AEAD2289F9A819E58FF45D5D911694 /* GPXTrackSegment.swift */,
+				61B0E69FF65C3E4A227B0E80AF197767 /* GPXWaypoint.swift */,
+				0B5C408B42F7D27FA4600BF8B68D1C6B /* NSMutableString+XML.swift */,
+				0E997D66DA4E88861D8B38A768A80AE1 /* Support Files */,
+			);
+			name = CoreGPX;
+			path = CoreGPX;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CC1DB2233359E42702A1606FE74DE2E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68676CD591957EA4525B4B03D1CF22AD /* CoreGPX.framework */,
+				7B8B672C17BA834289B142A77EE1AC07 /* Pods_JscenoSampleApp.framework */,
+				2703CFF650AA02399567CC1DF88CDBCF /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */,
+				3DBB832B60EC921305528506F255FC2D /* Pods_JscenoSampleAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				17ECB9942F537D76C56E503A310D1AE3 /* Pods */,
+				CC1DB2233359E42702A1606FE74DE2E1 /* Products */,
+				68170631C6AF0A9C646BF9D8AC42617A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F974A5E0D5BE7DC32A086070FFE76FA1 /* Pods-JscenoSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				815C73F43E40237CB3142162C750598A /* Pods-JscenoSampleAppTests.modulemap */,
+				B3BF823803CCFBB2FC3CA84A550F20E2 /* Pods-JscenoSampleAppTests-acknowledgements.markdown */,
+				DFA1F61CAF3DF13502668E68F44CB56F /* Pods-JscenoSampleAppTests-acknowledgements.plist */,
+				2E89240B0DC0F8CABE0BBEF09D133A8B /* Pods-JscenoSampleAppTests-dummy.m */,
+				D44C9199C9D3EDC14FB034B1A737D2CA /* Pods-JscenoSampleAppTests-Info.plist */,
+				B51350EFD2D46038AD7D02880F64E031 /* Pods-JscenoSampleAppTests-umbrella.h */,
+				E1B7F350ACCB85389AC1AE87F948023D /* Pods-JscenoSampleAppTests.debug.xcconfig */,
+				7E2E2A1F75EA6867C0BE73AAB05B4C3C /* Pods-JscenoSampleAppTests.release.xcconfig */,
+			);
+			name = "Pods-JscenoSampleAppTests";
+			path = "Target Support Files/Pods-JscenoSampleAppTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4931869032200FD61049492B1F7CCE96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7673514AD6D856B4171CDFFF0FA9FB /* Pods-JscenoSampleAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC4C03D31C1B49BF4892EE7B62939F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17B5257CE81FCA8F9387D3D4183C9DD /* Pods-JscenoSampleApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906251AADC0379D358054A208D787FCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB511DB00C4FFE5E9FC91B3596032F0E /* CoreGPX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF3E90695C451C5906084DA3D64A26C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1793B17745CFA3BD2DA23E8DC712374E /* Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		493735E92C5B6068F445B48D0CA7B736 /* CoreGPX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29A78C74B938513D80FD168480881B94 /* Build configuration list for PBXNativeTarget "CoreGPX" */;
+			buildPhases = (
+				906251AADC0379D358054A208D787FCB /* Headers */,
+				0A249636DA3D8A37D71189E15F7BDB5A /* Sources */,
+				1F373FB3F46C0BD58E2FD88BB84B9159 /* Frameworks */,
+				F432AB64DF10CEE9A1BB8BAC1BCF339B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreGPX;
+			productName = CoreGPX;
+			productReference = 68676CD591957EA4525B4B03D1CF22AD /* CoreGPX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC649C8A02B8F99A9DD2EE569440BD7E /* Pods-JscenoSampleApp-JscenoSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFDBB2B70BFA06FB9EC4ABE7AF4470A1 /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleApp-JscenoSampleAppUITests" */;
+			buildPhases = (
+				9DF3E90695C451C5906084DA3D64A26C /* Headers */,
+				BD9CE9FA8211302E8DCE9DCDEC4031A5 /* Sources */,
+				44C2937BCD072CE9BDAF220B4877E349 /* Frameworks */,
+				0CBD81016ED5ED85A9BEE4375420EA63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70BB5BBECC44D1E79E05EDA8602546DC /* PBXTargetDependency */,
+			);
+			name = "Pods-JscenoSampleApp-JscenoSampleAppUITests";
+			productName = "Pods-JscenoSampleApp-JscenoSampleAppUITests";
+			productReference = 2703CFF650AA02399567CC1DF88CDBCF /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEE6C32FBD7E3F3D9AFC139596CCC50F /* Pods-JscenoSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916228B3FEA6ECE1DA592DA4A53ACE58 /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleAppTests" */;
+			buildPhases = (
+				4931869032200FD61049492B1F7CCE96 /* Headers */,
+				991573C4605F2FD94C41DB6A16EF5CC8 /* Sources */,
+				6D910DC27C90507645FEAA79DBA935F3 /* Frameworks */,
+				C3D193EF7391AB88F69C21B22F4BA4F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82857339617D184E38F61EAE9F33D754 /* PBXTargetDependency */,
+			);
+			name = "Pods-JscenoSampleAppTests";
+			productName = "Pods-JscenoSampleAppTests";
+			productReference = 3DBB832B60EC921305528506F255FC2D /* Pods_JscenoSampleAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2B62176F3EBD4B4AE58AB7599BBA316 /* Pods-JscenoSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3C5EE5C08772581DD96A717204CB2A /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleApp" */;
+			buildPhases = (
+				4AC4C03D31C1B49BF4892EE7B62939F3 /* Headers */,
+				FD94341E8EBF534EB96C7545BDC881A3 /* Sources */,
+				E20D67290A5ADC0EE37A6F81C89F0B39 /* Frameworks */,
+				E6C1099A8E6EC8D26E05149984CDB896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B806406510B69AF4C4CBA4410ED3CB31 /* PBXTargetDependency */,
+			);
+			name = "Pods-JscenoSampleApp";
+			productName = "Pods-JscenoSampleApp";
+			productReference = 7B8B672C17BA834289B142A77EE1AC07 /* Pods_JscenoSampleApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CC1DB2233359E42702A1606FE74DE2E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493735E92C5B6068F445B48D0CA7B736 /* CoreGPX */,
+				E2B62176F3EBD4B4AE58AB7599BBA316 /* Pods-JscenoSampleApp */,
+				CC649C8A02B8F99A9DD2EE569440BD7E /* Pods-JscenoSampleApp-JscenoSampleAppUITests */,
+				CEE6C32FBD7E3F3D9AFC139596CCC50F /* Pods-JscenoSampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CBD81016ED5ED85A9BEE4375420EA63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D193EF7391AB88F69C21B22F4BA4F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C1099A8E6EC8D26E05149984CDB896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F432AB64DF10CEE9A1BB8BAC1BCF339B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A249636DA3D8A37D71189E15F7BDB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AE49D6C834903DF6D2205174DE9671 /* Converters.swift in Sources */,
+				C8E23FEC1FD76202575BA8E37F06E24F /* CoreGPX-dummy.m in Sources */,
+				F954F1AB37B1374C306F9C10E4C0DFF3 /* DateTimeParsers.swift in Sources */,
+				AEA0EC3FFC66BEA75D51F569ABC3AEA4 /* GPXAuthor.swift in Sources */,
+				D1A21CA56ED0679369CE2ED5C0AE4515 /* GPXBounds.swift in Sources */,
+				F941708C0FA178143D65EC7D8268AC88 /* GPXCopyright.swift in Sources */,
+				A83806762E319E40E3DBF394C2DE30E1 /* GPXElement.swift in Sources */,
+				121C9B660C6E3098A7845B703394CAC3 /* GPXEmail.swift in Sources */,
+				33C8FA92663EAB1F770CAC5415982CBA /* GPXError.swift in Sources */,
+				D653237DF7B1541474AC732CB58FB2F3 /* GPXExtensions.swift in Sources */,
+				BB3C1AAD64F340707206260392A3A530 /* GPXExtensionsElement.swift in Sources */,
+				39965687D3A6D952BAE161BA7F930B12 /* GPXFix.swift in Sources */,
+				1FCDDAC183B28480FC23DA212503D1FB /* GPXLink.swift in Sources */,
+				86BEFA255E23539EE7397EFBA49D16A7 /* GPXMetadata.swift in Sources */,
+				D7139A31778CF87D3CFE4DCE701A9C3A /* GPXParser.swift in Sources */,
+				84BF35209D50580CC0ED603E6A8D53EC /* GPXPerson.swift in Sources */,
+				1A46A24AA2193E4690BE8CB385C0EDDF /* GPXPoint.swift in Sources */,
+				BB206BBC5AF051F94060680175C55169 /* GPXPointSegment.swift in Sources */,
+				A9EA64CD9045D1D654399B4C006C6417 /* GPXRawElement.swift in Sources */,
+				12A4F543E8F6075CB78F5E9A22174DD4 /* GPXRoot.swift in Sources */,
+				B4AE21702D7F964D961F0BDB3C82018D /* GPXRoute.swift in Sources */,
+				C162CBAC46E6F482E40511E5DCFC9CBF /* GPXRoutePoint.swift in Sources */,
+				BC688B3D6457FA447D87F7D5D5564CB0 /* GPXTrack.swift in Sources */,
+				8D8D9D554A317A25A47D7EF7DF430682 /* GPXTrackPoint.swift in Sources */,
+				EE35A401CC416AE1E81316988E775DB3 /* GPXTrackSegment.swift in Sources */,
+				C62AB8F8030F04307350FE8018C08723 /* GPXWaypoint.swift in Sources */,
+				4B74C09F5C2C346208B6AB6156BA863C /* NSMutableString+XML.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991573C4605F2FD94C41DB6A16EF5CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F59F585B6C0A2F672AA463DEB0100C /* Pods-JscenoSampleAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9CE9FA8211302E8DCE9DCDEC4031A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF39F409767E7C90C0FCF9178DE5E5A /* Pods-JscenoSampleApp-JscenoSampleAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD94341E8EBF534EB96C7545BDC881A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3D231655AE41A8C6035B86F3A1FFB7E /* Pods-JscenoSampleApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70BB5BBECC44D1E79E05EDA8602546DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreGPX;
+			target = 493735E92C5B6068F445B48D0CA7B736 /* CoreGPX */;
+			targetProxy = DC2DE169E9DF8BEEE2E1B5EE36648D6D /* PBXContainerItemProxy */;
+		};
+		82857339617D184E38F61EAE9F33D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JscenoSampleApp";
+			target = E2B62176F3EBD4B4AE58AB7599BBA316 /* Pods-JscenoSampleApp */;
+			targetProxy = 2D64515D5F812D862D94276CB1B736B2 /* PBXContainerItemProxy */;
+		};
+		B806406510B69AF4C4CBA4410ED3CB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreGPX;
+			target = 493735E92C5B6068F445B48D0CA7B736 /* CoreGPX */;
+			targetProxy = BF1DA958D878B812A73A3B288648E9A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A6AFD7AD0A79A6BE35B678CDDB3516B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C691FE9F49068A59E0923660CE515E /* Pods-JscenoSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1AB81CC86FD77278A329F661A573CA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F087C526501ACD6A28EAE03D18253 /* CoreGPX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreGPX/CoreGPX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreGPX/CoreGPX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CoreGPX/CoreGPX.modulemap";
+				PRODUCT_MODULE_NAME = CoreGPX;
+				PRODUCT_NAME = CoreGPX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B3AC675DE89FDB474A224FF506865B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F087C526501ACD6A28EAE03D18253 /* CoreGPX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CoreGPX/CoreGPX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CoreGPX/CoreGPX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CoreGPX/CoreGPX.modulemap";
+				PRODUCT_MODULE_NAME = CoreGPX;
+				PRODUCT_NAME = CoreGPX;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DAEE2890D3182AA4F7F3614E2C98B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC61438233A2E88F13749AA4BCC683A2 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AB063D788E125DCB415C9D192AAED7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39DDB450796F876DAC2BB285CCE789F1 /* Pods-JscenoSampleApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEB44A6C535BCA4DFFC282B5CBA05A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2E2A1F75EA6867C0BE73AAB05B4C3C /* Pods-JscenoSampleAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B353165A85E8A92CB3C1260A293BE1FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3AE5C7AFD200468C52F4410923ACD1 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D82F2F6BD66F566A7E5D89BA63E71B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B7F350ACCB85389AC1AE87F948023D /* Pods-JscenoSampleAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29A78C74B938513D80FD168480881B94 /* Build configuration list for PBXNativeTarget "CoreGPX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3AC675DE89FDB474A224FF506865B1 /* Debug */,
+				1AB81CC86FD77278A329F661A573CA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916228B3FEA6ECE1DA592DA4A53ACE58 /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82F2F6BD66F566A7E5D89BA63E71B58 /* Debug */,
+				AEEB44A6C535BCA4DFFC282B5CBA05A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3C5EE5C08772581DD96A717204CB2A /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A6AFD7AD0A79A6BE35B678CDDB3516B /* Debug */,
+				AB063D788E125DCB415C9D192AAED7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFDBB2B70BFA06FB9EC4ABE7AF4470A1 /* Build configuration list for PBXNativeTarget "Pods-JscenoSampleApp-JscenoSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAEE2890D3182AA4F7F3614E2C98B0B /* Debug */,
+				B353165A85E8A92CB3C1260A293BE1FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

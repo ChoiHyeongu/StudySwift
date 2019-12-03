@@ -1,0 +1,6 @@
+framework module Pods_JscenoSampleApp_JscenoSampleAppUITests {
+  umbrella header "Pods-JscenoSampleApp-JscenoSampleAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
