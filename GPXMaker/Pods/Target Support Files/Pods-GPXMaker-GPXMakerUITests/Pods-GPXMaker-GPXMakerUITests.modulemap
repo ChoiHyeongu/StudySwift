@@ -1,0 +1,6 @@
+framework module Pods_GPXMaker_GPXMakerUITests {
+  umbrella header "Pods-GPXMaker-GPXMakerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

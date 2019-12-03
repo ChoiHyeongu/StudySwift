@@ -1,0 +1,16 @@
+PODS:
+  - CoreGPX (0.7.4)
+
+DEPENDENCIES:
+  - CoreGPX
+
+SPEC REPOS:
+  trunk:
+    - CoreGPX
+
+SPEC CHECKSUMS:
+  CoreGPX: 9927a0158614c4baed08ecdb772fdc24efd92e49
+
+PODFILE CHECKSUM: 8890856c7a65d35a6a49e88ec3fd4ceacf2e5f2d
+
+COCOAPODS: 1.8.4

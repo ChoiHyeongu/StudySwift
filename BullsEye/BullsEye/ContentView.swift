@@ -17,32 +17,47 @@ struct ContentView: View {
     @State var gGuess: Double
     @State var bGuess: Double
     @State var showAlert = false
+    @ObservedObject var timer = TimeCounter()
     
     var body: some View {
         VStack {
             HStack{
                 VStack{
                     Color(red: rTarget, green: gTarget, blue: bTarget)
-                    Text("Match this color")
+                    self.showAlert ? Text("R: \(Int(rTarget * 255.0))"
+                        + "  G: \(Int(gTarget * 255.0))"
+                        + "  B: \(Int(bTarget * 255.0))")
+                        : Text("Match this color")
                 }
                 
                 VStack{
-                    Color(red: rGuess, green: gGuess, blue: bGuess)
+                    ZStack(alignment: .center){
+                        Color(red: rGuess, green: gGuess, blue: bGuess)
+                        Text(String(timer.counter))
+                            .padding(.all)
+                            .background(Color.white)
+                            .mask(Circle())
+                    }
                     Text("R: \(Int(rGuess*255.0))"
                         + " G: \(Int(gGuess*255.0))"
                         + " G: \(Int(bGuess*255.0))")
                 }
             }
-            Button(action: {self.showAlert = true }) {
+            Button(action: {
+                self.showAlert = true
+                self.timer.killTime()
+            }) {
                 Text("Hit me!")
             }.alert(isPresented: $showAlert) {
                 Alert(title: Text("Your Score"),
                       message: Text(String(computeScore())))
             }.padding()
             
-            ColorSlide(value: $rGuess, textColor: .red)
-            ColorSlide(value: $gGuess, textColor: .green)
-            ColorSlide(value: $bGuess, textColor: .blue)
+            VStack{
+                ColorSlide(value: $rGuess, textColor: .red)
+                ColorSlide(value: $gGuess, textColor: .green)
+                ColorSlide(value: $bGuess, textColor: .blue)
+            }.padding(.horizontal)
         }
     }
     
@@ -57,7 +72,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rGuess: 0.8, gGuess: 0.3, bGuess: 0.7).previewLayout(.fixed(width: 568, height: 320))
+        ContentView(rGuess: 0.8, gGuess: 0.3, bGuess: 0.7)
     }
 }
 
@@ -70,6 +85,8 @@ struct ColorSlide: View {
         HStack{
             Text("0").foregroundColor(textColor)
             Slider(value: $value)
+                .background(textColor)
+                .cornerRadius(10)
             Text("255").foregroundColor(textColor)
         }.padding(.horizontal)
     }

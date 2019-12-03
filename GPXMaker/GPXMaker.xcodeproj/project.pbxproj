@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01FBE43D3FB45D20A551B07A /* Pods_GPXMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C867656F4F42BAE7376517 /* Pods_GPXMaker.framework */; };
+		0946BE863CB2FD416D89D994 /* Pods_GPXMakerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CE737A27BA4C460FCA6AF8 /* Pods_GPXMakerTests.framework */; };
+		349F31A85252C223F5368336 /* Pods_GPXMaker_GPXMakerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AB26A9BF12AFDAF088C6C8 /* Pods_GPXMaker_GPXMakerUITests.framework */; };
+		FF74D074239634A300DF9793 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74D073239634A300DF9793 /* MapView.swift */; };
+		FFB5EEC823962B6600412990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEC723962B6600412990 /* AppDelegate.swift */; };
+		FFB5EECA23962B6600412990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEC923962B6600412990 /* SceneDelegate.swift */; };
+		FFB5EECC23962B6600412990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EECB23962B6600412990 /* ContentView.swift */; };
+		FFB5EECE23962B6C00412990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB5EECD23962B6C00412990 /* Assets.xcassets */; };
+		FFB5EED123962B6C00412990 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB5EED023962B6C00412990 /* Preview Assets.xcassets */; };
+		FFB5EED423962B6C00412990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB5EED223962B6C00412990 /* LaunchScreen.storyboard */; };
+		FFB5EEDF23962B6C00412990 /* GPXMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEDE23962B6C00412990 /* GPXMakerTests.swift */; };
+		FFB5EEEA23962B6C00412990 /* GPXMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEE923962B6C00412990 /* GPXMakerUITests.swift */; };
+		FFB5EEF823962BAE00412990 /* GPXLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEF723962BAE00412990 /* GPXLocation.swift */; };
+		FFB5EEFA23962BCB00412990 /* LocatinObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5EEF923962BCB00412990 /* LocatinObserver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB5EEDB23962B6C00412990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB5EEBC23962B6600412990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB5EEC323962B6600412990;
+			remoteInfo = GPXMaker;
+		};
+		FFB5EEE623962B6C00412990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB5EEBC23962B6600412990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB5EEC323962B6600412990;
+			remoteInfo = GPXMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		118B5DDEA2995F694C664E38 /* Pods-GPXMakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMakerTests.debug.xcconfig"; path = "Target Support Files/Pods-GPXMakerTests/Pods-GPXMakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38F71CC97FD354150F4ABBD6 /* Pods-GPXMaker-GPXMakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMaker-GPXMakerUITests.debug.xcconfig"; path = "Target Support Files/Pods-GPXMaker-GPXMakerUITests/Pods-GPXMaker-GPXMakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		40C867656F4F42BAE7376517 /* Pods_GPXMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPXMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		927CF284CF4A028DF9E07D76 /* Pods-GPXMakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMakerTests.release.xcconfig"; path = "Target Support Files/Pods-GPXMakerTests/Pods-GPXMakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0CE737A27BA4C460FCA6AF8 /* Pods_GPXMakerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPXMakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A230582299DD4611F85B0A58 /* Pods-GPXMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMaker.debug.xcconfig"; path = "Target Support Files/Pods-GPXMaker/Pods-GPXMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		AE965AC773972EF936B3C756 /* Pods-GPXMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMaker.release.xcconfig"; path = "Target Support Files/Pods-GPXMaker/Pods-GPXMaker.release.xcconfig"; sourceTree = "<group>"; };
+		C8AB26A9BF12AFDAF088C6C8 /* Pods_GPXMaker_GPXMakerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPXMaker_GPXMakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32F44D187785E8866D823B2 /* Pods-GPXMaker-GPXMakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPXMaker-GPXMakerUITests.release.xcconfig"; path = "Target Support Files/Pods-GPXMaker-GPXMakerUITests/Pods-GPXMaker-GPXMakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF74D073239634A300DF9793 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FFB5EEC423962B6600412990 /* GPXMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPXMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB5EEC723962B6600412990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFB5EEC923962B6600412990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFB5EECB23962B6600412990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFB5EECD23962B6C00412990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB5EED023962B6C00412990 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFB5EED323962B6C00412990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB5EED523962B6C00412990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB5EEDA23962B6C00412990 /* GPXMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB5EEDE23962B6C00412990 /* GPXMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXMakerTests.swift; sourceTree = "<group>"; };
+		FFB5EEE023962B6C00412990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB5EEE523962B6C00412990 /* GPXMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB5EEE923962B6C00412990 /* GPXMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXMakerUITests.swift; sourceTree = "<group>"; };
+		FFB5EEEB23962B6C00412990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB5EEF723962BAE00412990 /* GPXLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXLocation.swift; sourceTree = "<group>"; };
+		FFB5EEF923962BCB00412990 /* LocatinObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatinObserver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB5EEC123962B6600412990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FBE43D3FB45D20A551B07A /* Pods_GPXMaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EED723962B6C00412990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0946BE863CB2FD416D89D994 /* Pods_GPXMakerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EEE223962B6C00412990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349F31A85252C223F5368336 /* Pods_GPXMaker_GPXMakerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184FEC1A353DA3B3705198CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C867656F4F42BAE7376517 /* Pods_GPXMaker.framework */,
+				C8AB26A9BF12AFDAF088C6C8 /* Pods_GPXMaker_GPXMakerUITests.framework */,
+				A0CE737A27BA4C460FCA6AF8 /* Pods_GPXMakerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BF4FEE85A0265CF1162626A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A230582299DD4611F85B0A58 /* Pods-GPXMaker.debug.xcconfig */,
+				AE965AC773972EF936B3C756 /* Pods-GPXMaker.release.xcconfig */,
+				38F71CC97FD354150F4ABBD6 /* Pods-GPXMaker-GPXMakerUITests.debug.xcconfig */,
+				F32F44D187785E8866D823B2 /* Pods-GPXMaker-GPXMakerUITests.release.xcconfig */,
+				118B5DDEA2995F694C664E38 /* Pods-GPXMakerTests.debug.xcconfig */,
+				927CF284CF4A028DF9E07D76 /* Pods-GPXMakerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FFB5EEBB23962B6600412990 = {
+			isa = PBXGroup;
+			children = (
+				FFB5EEC623962B6600412990 /* GPXMaker */,
+				FFB5EEDD23962B6C00412990 /* GPXMakerTests */,
+				FFB5EEE823962B6C00412990 /* GPXMakerUITests */,
+				FFB5EEC523962B6600412990 /* Products */,
+				8BF4FEE85A0265CF1162626A /* Pods */,
+				184FEC1A353DA3B3705198CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB5EEC523962B6600412990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5EEC423962B6600412990 /* GPXMaker.app */,
+				FFB5EEDA23962B6C00412990 /* GPXMakerTests.xctest */,
+				FFB5EEE523962B6C00412990 /* GPXMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB5EEC623962B6600412990 /* GPXMaker */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5EEC723962B6600412990 /* AppDelegate.swift */,
+				FFB5EEC923962B6600412990 /* SceneDelegate.swift */,
+				FFB5EECB23962B6600412990 /* ContentView.swift */,
+				FF74D073239634A300DF9793 /* MapView.swift */,
+				FFB5EECD23962B6C00412990 /* Assets.xcassets */,
+				FFB5EED223962B6C00412990 /* LaunchScreen.storyboard */,
+				FFB5EED523962B6C00412990 /* Info.plist */,
+				FFB5EECF23962B6C00412990 /* Preview Content */,
+				FFB5EEF723962BAE00412990 /* GPXLocation.swift */,
+				FFB5EEF923962BCB00412990 /* LocatinObserver.swift */,
+			);
+			path = GPXMaker;
+			sourceTree = "<group>";
+		};
+		FFB5EECF23962B6C00412990 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5EED023962B6C00412990 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFB5EEDD23962B6C00412990 /* GPXMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5EEDE23962B6C00412990 /* GPXMakerTests.swift */,
+				FFB5EEE023962B6C00412990 /* Info.plist */,
+			);
+			path = GPXMakerTests;
+			sourceTree = "<group>";
+		};
+		FFB5EEE823962B6C00412990 /* GPXMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5EEE923962B6C00412990 /* GPXMakerUITests.swift */,
+				FFB5EEEB23962B6C00412990 /* Info.plist */,
+			);
+			path = GPXMakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB5EEC323962B6600412990 /* GPXMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB5EEEE23962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMaker" */;
+			buildPhases = (
+				72BE3C9EA8584E806FE6BD03 /* [CP] Check Pods Manifest.lock */,
+				FFB5EEC023962B6600412990 /* Sources */,
+				FFB5EEC123962B6600412990 /* Frameworks */,
+				FFB5EEC223962B6600412990 /* Resources */,
+				A0238A5EEAC6DFF67576DEA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPXMaker;
+			productName = GPXMaker;
+			productReference = FFB5EEC423962B6600412990 /* GPXMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFB5EED923962B6C00412990 /* GPXMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB5EEF123962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMakerTests" */;
+			buildPhases = (
+				77BE8745D0FEED4A0FA10B15 /* [CP] Check Pods Manifest.lock */,
+				FFB5EED623962B6C00412990 /* Sources */,
+				FFB5EED723962B6C00412990 /* Frameworks */,
+				FFB5EED823962B6C00412990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB5EEDC23962B6C00412990 /* PBXTargetDependency */,
+			);
+			name = GPXMakerTests;
+			productName = GPXMakerTests;
+			productReference = FFB5EEDA23962B6C00412990 /* GPXMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFB5EEE423962B6C00412990 /* GPXMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB5EEF423962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMakerUITests" */;
+			buildPhases = (
+				86D32A8EF23B466201CAE941 /* [CP] Check Pods Manifest.lock */,
+				FFB5EEE123962B6C00412990 /* Sources */,
+				FFB5EEE223962B6C00412990 /* Frameworks */,
+				FFB5EEE323962B6C00412990 /* Resources */,
+				86D8ABF60BC95AF841E606D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB5EEE723962B6C00412990 /* PBXTargetDependency */,
+			);
+			name = GPXMakerUITests;
+			productName = GPXMakerUITests;
+			productReference = FFB5EEE523962B6C00412990 /* GPXMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB5EEBC23962B6600412990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Choi;
+				TargetAttributes = {
+					FFB5EEC323962B6600412990 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					FFB5EED923962B6C00412990 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FFB5EEC323962B6600412990;
+					};
+					FFB5EEE423962B6C00412990 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = FFB5EEC323962B6600412990;
+					};
+				};
+			};
+			buildConfigurationList = FFB5EEBF23962B6600412990 /* Build configuration list for PBXProject "GPXMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB5EEBB23962B6600412990;
+			productRefGroup = FFB5EEC523962B6600412990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB5EEC323962B6600412990 /* GPXMaker */,
+				FFB5EED923962B6C00412990 /* GPXMakerTests */,
+				FFB5EEE423962B6C00412990 /* GPXMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB5EEC223962B6600412990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB5EED423962B6C00412990 /* LaunchScreen.storyboard in Resources */,
+				FFB5EED123962B6C00412990 /* Preview Assets.xcassets in Resources */,
+				FFB5EECE23962B6C00412990 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EED823962B6C00412990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EEE323962B6C00412990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72BE3C9EA8584E806FE6BD03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPXMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77BE8745D0FEED4A0FA10B15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPXMakerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D32A8EF23B466201CAE941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPXMaker-GPXMakerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D8ABF60BC95AF841E606D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXMaker-GPXMakerUITests/Pods-GPXMaker-GPXMakerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXMaker-GPXMakerUITests/Pods-GPXMaker-GPXMakerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPXMaker-GPXMakerUITests/Pods-GPXMaker-GPXMakerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0238A5EEAC6DFF67576DEA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXMaker/Pods-GPXMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPXMaker/Pods-GPXMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPXMaker/Pods-GPXMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB5EEC023962B6600412990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB5EEF823962BAE00412990 /* GPXLocation.swift in Sources */,
+				FF74D074239634A300DF9793 /* MapView.swift in Sources */,
+				FFB5EEFA23962BCB00412990 /* LocatinObserver.swift in Sources */,
+				FFB5EEC823962B6600412990 /* AppDelegate.swift in Sources */,
+				FFB5EECA23962B6600412990 /* SceneDelegate.swift in Sources */,
+				FFB5EECC23962B6600412990 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EED623962B6C00412990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB5EEDF23962B6C00412990 /* GPXMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB5EEE123962B6C00412990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB5EEEA23962B6C00412990 /* GPXMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFB5EEDC23962B6C00412990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB5EEC323962B6600412990 /* GPXMaker */;
+			targetProxy = FFB5EEDB23962B6C00412990 /* PBXContainerItemProxy */;
+		};
+		FFB5EEE723962B6C00412990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB5EEC323962B6600412990 /* GPXMaker */;
+			targetProxy = FFB5EEE623962B6C00412990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFB5EED223962B6C00412990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB5EED323962B6C00412990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB5EEEC23962B6C00412990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFB5EEED23962B6C00412990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB5EEEF23962B6C00412990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A230582299DD4611F85B0A58 /* Pods-GPXMaker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GPXMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GPXMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB5EEF023962B6C00412990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE965AC773972EF936B3C756 /* Pods-GPXMaker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GPXMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GPXMaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFB5EEF223962B6C00412990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118B5DDEA2995F694C664E38 /* Pods-GPXMakerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GPXMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPXMaker.app/GPXMaker";
+			};
+			name = Debug;
+		};
+		FFB5EEF323962B6C00412990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927CF284CF4A028DF9E07D76 /* Pods-GPXMakerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GPXMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPXMaker.app/GPXMaker";
+			};
+			name = Release;
+		};
+		FFB5EEF523962B6C00412990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F71CC97FD354150F4ABBD6 /* Pods-GPXMaker-GPXMakerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GPXMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPXMaker;
+			};
+			name = Debug;
+		};
+		FFB5EEF623962B6C00412990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32F44D187785E8866D823B2 /* Pods-GPXMaker-GPXMakerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				INFOPLIST_FILE = GPXMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = motivation.GPXMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPXMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB5EEBF23962B6600412990 /* Build configuration list for PBXProject "GPXMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5EEEC23962B6C00412990 /* Debug */,
+				FFB5EEED23962B6C00412990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB5EEEE23962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5EEEF23962B6C00412990 /* Debug */,
+				FFB5EEF023962B6C00412990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB5EEF123962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5EEF223962B6C00412990 /* Debug */,
+				FFB5EEF323962B6C00412990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB5EEF423962B6C00412990 /* Build configuration list for PBXNativeTarget "GPXMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5EEF523962B6C00412990 /* Debug */,
+				FFB5EEF623962B6C00412990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB5EEBC23962B6600412990 /* Project object */;
+}

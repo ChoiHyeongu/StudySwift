@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF8F0D0F2395FA9D000163D9 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8F0D0E2395FA9D000163D9 /* TimeCounter.swift */; };
 		FFA8EBB423913B0000D60CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8EBB323913B0000D60CC3 /* AppDelegate.swift */; };
 		FFA8EBB623913B0000D60CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8EBB523913B0000D60CC3 /* SceneDelegate.swift */; };
 		FFA8EBB823913B0000D60CC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8EBB723913B0000D60CC3 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF8F0D0E2395FA9D000163D9 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		FFA8EBB023913B0000D60CC3 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA8EBB323913B0000D60CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA8EBB523913B0000D60CC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FFA8EBB323913B0000D60CC3 /* AppDelegate.swift */,
 				FFA8EBB523913B0000D60CC3 /* SceneDelegate.swift */,
 				FFA8EBB723913B0000D60CC3 /* ContentView.swift */,
+				FF8F0D0E2395FA9D000163D9 /* TimeCounter.swift */,
 				FFA8EBB923913B0100D60CC3 /* Assets.xcassets */,
 				FFA8EBBE23913B0100D60CC3 /* LaunchScreen.storyboard */,
 				FFA8EBC123913B0100D60CC3 /* Info.plist */,
@@ -270,6 +273,7 @@
 				FFA8EBB423913B0000D60CC3 /* AppDelegate.swift in Sources */,
 				FFA8EBB623913B0000D60CC3 /* SceneDelegate.swift in Sources */,
 				FFA8EBB823913B0000D60CC3 /* ContentView.swift in Sources */,
+				FF8F0D0F2395FA9D000163D9 /* TimeCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
