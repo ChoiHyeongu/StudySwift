@@ -29,6 +29,7 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
         
     }
     
+    //시작 및 종료 버튼 클릭
     func statusButtonClicked(){
         if(isStart){
             isStart = false
@@ -46,6 +47,7 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
             gpxLocations.append(gpxLocation)
         }
     }
+    
     
     func printGPXLocations(){
         print ("---------------Start GPXLocations---------------")
@@ -65,6 +67,7 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
         for location in gpxLocations {
             let coordinate = location.coordinate
             let trackpoint = GPXTrackPoint(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        
             trackpoint.extensions = GPXExtensions()
             trackpoint.elevation = location.elevation
             trackpoint.time = location.time
