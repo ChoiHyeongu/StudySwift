@@ -48,7 +48,7 @@ class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
-    //GPX출력
+    //GPX출력하기
     func printGPXLocations(){
         print ("---------------Start GPXLocations---------------")
         for location in gpxLocations {
