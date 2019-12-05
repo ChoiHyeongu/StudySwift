@@ -2,7 +2,7 @@
 //  JscenoSampleAppUITests.swift
 //  JscenoSampleAppUITests
 //
-//  Created by Choi on 2019/11/27.
+//  Created by Choi on 2019/12/03.
 //  Copyright © 2019 Choi. All rights reserved.
 //
 

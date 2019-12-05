@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  JscenoSampleApp
 //
-//  Created by Choi on 2019/11/27.
+//  Created by Choi on 2019/12/03.
 //  Copyright © 2019 Choi. All rights reserved.
 //
 
@@ -10,8 +10,6 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

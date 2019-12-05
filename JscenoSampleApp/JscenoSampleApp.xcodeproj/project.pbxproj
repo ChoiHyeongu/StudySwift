@@ -3,209 +3,220 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7CF1453DDA0C2B572BAD45F8 /* Pods_JscenoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5D2178267D1F185B7E1FB6 /* Pods_JscenoSampleApp.framework */; };
-		7F2E33F5DEAC68543AB2CB78 /* Pods_JscenoSampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B38855D5171CAADF6FE95650 /* Pods_JscenoSampleAppTests.framework */; };
-		9FBFCFDC63560913A0CB4B77 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1ACD17C178CD09CE204714 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */; };
-		FF56DCCB238E3A1000B170E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */; };
-		FF56DCCD238E3A1000B170E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */; };
-		FF56DCCF238E3A1000B170E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCCE238E3A1000B170E4 /* ContentView.swift */; };
-		FF56DCD1238E3A1300B170E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD0238E3A1300B170E4 /* Assets.xcassets */; };
-		FF56DCD4238E3A1300B170E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */; };
-		FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */; };
-		FF56DCE2238E3A1300B170E4 /* JscenoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */; };
-		FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */; };
-		FF5BE244238F69B5004224E7 /* GPXRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE243238F69B5004224E7 /* GPXRow.swift */; };
-		FF5BE246238F6A01004224E7 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5BE245238F6A01004224E7 /* GPX.swift */; };
-		FF95AC4E239134F6004C342F /* gpxData.json in Resources */ = {isa = PBXBuildFile; fileRef = FF95AC4D239134F6004C342F /* gpxData.json */; };
+		1BFFF4347B38D26EDA3DC6D1 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F439D8A4BF7449210BB82B86 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */; };
+		2FB670A2720917D694A362F5 /* Pods_JscenoSampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7159C05A7C6F397AD8B07EC3 /* Pods_JscenoSampleAppTests.framework */; };
+		73D6D209EC67226826089A40 /* Pods_JscenoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F0AE8D8EBD6A9397A248BC /* Pods_JscenoSampleApp.framework */; };
+		FF765ECA23988DC900786002 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765EC923988DC900786002 /* GPX.swift */; };
+		FF765ECC23989C2700786002 /* TrackInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765ECB23989C2700786002 /* TrackInfo.swift */; };
+		FF765ECE2398A86B00786002 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF765ECD2398A86B00786002 /* LocationManager.swift */; };
+		FF887BFE2396503B00322F3A /* GPXListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF887BFD2396503B00322F3A /* GPXListView.swift */; };
+		FF8BD3F72398BCCF00977B66 /* CreateGPXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8BD3F62398BCCF00977B66 /* CreateGPXView.swift */; };
+		FF9951C623964F060034405E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951C523964F060034405E /* AppDelegate.swift */; };
+		FF9951C823964F060034405E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951C723964F060034405E /* SceneDelegate.swift */; };
+		FF9951CA23964F060034405E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951C923964F060034405E /* MapView.swift */; };
+		FF9951CC23964F070034405E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9951CB23964F070034405E /* Assets.xcassets */; };
+		FF9951CF23964F070034405E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9951CE23964F070034405E /* Preview Assets.xcassets */; };
+		FF9951D223964F070034405E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9951D023964F070034405E /* LaunchScreen.storyboard */; };
+		FF9951DD23964F080034405E /* JscenoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951DC23964F080034405E /* JscenoSampleAppTests.swift */; };
+		FF9951E823964F080034405E /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951E723964F080034405E /* JscenoSampleAppUITests.swift */; };
+		FFBFD4E32397501200A0FA85 /* suli.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FFBFD4E22397501200A0FA85 /* suli.gpx */; };
+		FFBFD4E52397504800A0FA85 /* GPXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFD4E42397504800A0FA85 /* GPXManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FF56DCDE238E3A1300B170E4 /* PBXContainerItemProxy */ = {
+		FF9951D923964F080034405E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF56DCBF238E3A1000B170E4 /* Project object */;
+			containerPortal = FF9951BA23964F060034405E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF56DCC6238E3A1000B170E4;
+			remoteGlobalIDString = FF9951C123964F060034405E;
 			remoteInfo = JscenoSampleApp;
 		};
-		FF56DCE9238E3A1300B170E4 /* PBXContainerItemProxy */ = {
+		FF9951E423964F080034405E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF56DCBF238E3A1000B170E4 /* Project object */;
+			containerPortal = FF9951BA23964F060034405E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF56DCC6238E3A1000B170E4;
+			remoteGlobalIDString = FF9951C123964F060034405E;
 			remoteInfo = JscenoSampleApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C5D2178267D1F185B7E1FB6 /* Pods_JscenoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		530C9C9AE354EC903A9ACE14 /* Pods-JscenoSampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		74F856D0E30222BE7930D847 /* Pods-JscenoSampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8A1ACD17C178CD09CE204714 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleApp_JscenoSampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BCE2E2C1E79245591E78980 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		922CF974ABC6BF34444FBAE6 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B38855D5171CAADF6FE95650 /* Pods_JscenoSampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B85224FEEF3510211025986A /* Pods-JscenoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		ECAF4DBAB01D09AEA0668CD8 /* Pods-JscenoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JscenoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF56DCCE238E3A1000B170E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FF56DCD0238E3A1300B170E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FF56DCD6238E3A1300B170E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FF56DCD8238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppTests.swift; sourceTree = "<group>"; };
-		FF56DCE3238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppUITests.swift; sourceTree = "<group>"; };
-		FF56DCEE238E3A1300B170E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF5BE243238F69B5004224E7 /* GPXRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRow.swift; sourceTree = "<group>"; };
-		FF5BE245238F6A01004224E7 /* GPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
-		FF95AC4D239134F6004C342F /* gpxData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gpxData.json; sourceTree = "<group>"; };
+		66F0AE8D8EBD6A9397A248BC /* Pods_JscenoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7159C05A7C6F397AD8B07EC3 /* Pods_JscenoSampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6ADB6E8B0B7CDA20E1D0A3 /* Pods-JscenoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F12DC95204E43C693D40CF2 /* Pods-JscenoSampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		84D51C2BC9AB38F5B640B159 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2B1F0EC6E3EB90A9D1E6869 /* Pods-JscenoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp.release.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		C792D108EC722D642C3BBBAA /* Pods-JscenoSampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleAppTests/Pods-JscenoSampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F439D8A4BF7449210BB82B86 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JscenoSampleApp_JscenoSampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB54C5AFE800567EAEB9E53F /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF765EC923988DC900786002 /* GPX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
+		FF765ECB23989C2700786002 /* TrackInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackInfo.swift; sourceTree = "<group>"; };
+		FF765ECD2398A86B00786002 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FF887BFD2396503B00322F3A /* GPXListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXListView.swift; sourceTree = "<group>"; };
+		FF8BD3F62398BCCF00977B66 /* CreateGPXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGPXView.swift; sourceTree = "<group>"; };
+		FF9951C223964F060034405E /* JscenoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JscenoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9951C523964F060034405E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF9951C723964F060034405E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF9951C923964F060034405E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FF9951CB23964F070034405E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF9951CE23964F070034405E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF9951D123964F070034405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF9951D323964F070034405E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9951D823964F080034405E /* JscenoSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9951DC23964F080034405E /* JscenoSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppTests.swift; sourceTree = "<group>"; };
+		FF9951DE23964F080034405E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9951E323964F080034405E /* JscenoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9951E723964F080034405E /* JscenoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppUITests.swift; sourceTree = "<group>"; };
+		FF9951E923964F080034405E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBFD4E22397501200A0FA85 /* suli.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = suli.gpx; sourceTree = "<group>"; };
+		FFBFD4E42397504800A0FA85 /* GPXManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FF56DCC4238E3A1000B170E4 /* Frameworks */ = {
+		FF9951BF23964F060034405E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CF1453DDA0C2B572BAD45F8 /* Pods_JscenoSampleApp.framework in Frameworks */,
+				73D6D209EC67226826089A40 /* Pods_JscenoSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCDA238E3A1300B170E4 /* Frameworks */ = {
+		FF9951D523964F080034405E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2E33F5DEAC68543AB2CB78 /* Pods_JscenoSampleAppTests.framework in Frameworks */,
+				2FB670A2720917D694A362F5 /* Pods_JscenoSampleAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCE5238E3A1300B170E4 /* Frameworks */ = {
+		FF9951E023964F080034405E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FBFCFDC63560913A0CB4B77 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework in Frameworks */,
+				1BFFF4347B38D26EDA3DC6D1 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D4429CE2FCD443E46C8E756 /* Frameworks */ = {
+		2C852E630A1D985F79D0BF0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C5D2178267D1F185B7E1FB6 /* Pods_JscenoSampleApp.framework */,
-				8A1ACD17C178CD09CE204714 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */,
-				B38855D5171CAADF6FE95650 /* Pods_JscenoSampleAppTests.framework */,
+				7E6ADB6E8B0B7CDA20E1D0A3 /* Pods-JscenoSampleApp.debug.xcconfig */,
+				B2B1F0EC6E3EB90A9D1E6869 /* Pods-JscenoSampleApp.release.xcconfig */,
+				FB54C5AFE800567EAEB9E53F /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */,
+				84D51C2BC9AB38F5B640B159 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */,
+				C792D108EC722D642C3BBBAA /* Pods-JscenoSampleAppTests.debug.xcconfig */,
+				7F12DC95204E43C693D40CF2 /* Pods-JscenoSampleAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7D8E917B9456ADC2C1FD7EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66F0AE8D8EBD6A9397A248BC /* Pods_JscenoSampleApp.framework */,
+				F439D8A4BF7449210BB82B86 /* Pods_JscenoSampleApp_JscenoSampleAppUITests.framework */,
+				7159C05A7C6F397AD8B07EC3 /* Pods_JscenoSampleAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C51E310ED3B8BEB0C23F8321 /* Pods */ = {
+		FF9951B923964F060034405E = {
 			isa = PBXGroup;
 			children = (
-				B85224FEEF3510211025986A /* Pods-JscenoSampleApp.debug.xcconfig */,
-				ECAF4DBAB01D09AEA0668CD8 /* Pods-JscenoSampleApp.release.xcconfig */,
-				922CF974ABC6BF34444FBAE6 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */,
-				8BCE2E2C1E79245591E78980 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */,
-				74F856D0E30222BE7930D847 /* Pods-JscenoSampleAppTests.debug.xcconfig */,
-				530C9C9AE354EC903A9ACE14 /* Pods-JscenoSampleAppTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		FF56DCBE238E3A1000B170E4 = {
-			isa = PBXGroup;
-			children = (
-				FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */,
-				FF56DCE0238E3A1300B170E4 /* JscenoSampleAppTests */,
-				FF56DCEB238E3A1300B170E4 /* JscenoSampleAppUITests */,
-				FF56DCC8238E3A1000B170E4 /* Products */,
-				C51E310ED3B8BEB0C23F8321 /* Pods */,
-				1D4429CE2FCD443E46C8E756 /* Frameworks */,
+				FFBFD4E123974FB100A0FA85 /* GPX */,
+				FF9951C423964F060034405E /* JscenoSampleApp */,
+				FF9951DB23964F080034405E /* JscenoSampleAppTests */,
+				FF9951E623964F080034405E /* JscenoSampleAppUITests */,
+				FF9951C323964F060034405E /* Products */,
+				2C852E630A1D985F79D0BF0F /* Pods */,
+				A7D8E917B9456ADC2C1FD7EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		FF56DCC8238E3A1000B170E4 /* Products */ = {
+		FF9951C323964F060034405E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */,
-				FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */,
-				FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */,
+				FF9951C223964F060034405E /* JscenoSampleApp.app */,
+				FF9951D823964F080034405E /* JscenoSampleAppTests.xctest */,
+				FF9951E323964F080034405E /* JscenoSampleAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF56DCC9238E3A1000B170E4 /* JscenoSampleApp */ = {
+		FF9951C423964F060034405E /* JscenoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF95AC4C23913497004C342F /* Resources */,
-				FF5BE243238F69B5004224E7 /* GPXRow.swift */,
-				FF56DCCA238E3A1000B170E4 /* AppDelegate.swift */,
-				FF56DCCC238E3A1000B170E4 /* SceneDelegate.swift */,
-				FF56DCCE238E3A1000B170E4 /* ContentView.swift */,
-				FF56DCD0238E3A1300B170E4 /* Assets.xcassets */,
-				FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */,
-				FF56DCD8238E3A1300B170E4 /* Info.plist */,
-				FF56DCD2238E3A1300B170E4 /* Preview Content */,
-				FF5BE245238F6A01004224E7 /* GPX.swift */,
+				FFBFD4E42397504800A0FA85 /* GPXManager.swift */,
+				FF765EC923988DC900786002 /* GPX.swift */,
+				FF765ECB23989C2700786002 /* TrackInfo.swift */,
+				FF9951C923964F060034405E /* MapView.swift */,
+				FF9951C523964F060034405E /* AppDelegate.swift */,
+				FF9951C723964F060034405E /* SceneDelegate.swift */,
+				FF765ECD2398A86B00786002 /* LocationManager.swift */,
+				FF887BFD2396503B00322F3A /* GPXListView.swift */,
+				FF8BD3F62398BCCF00977B66 /* CreateGPXView.swift */,
+				FF9951CB23964F070034405E /* Assets.xcassets */,
+				FF9951D023964F070034405E /* LaunchScreen.storyboard */,
+				FF9951D323964F070034405E /* Info.plist */,
+				FF9951CD23964F070034405E /* Preview Content */,
 			);
 			path = JscenoSampleApp;
 			sourceTree = "<group>";
 		};
-		FF56DCD2238E3A1300B170E4 /* Preview Content */ = {
+		FF9951CD23964F070034405E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				FF56DCD3238E3A1300B170E4 /* Preview Assets.xcassets */,
+				FF9951CE23964F070034405E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FF56DCE0238E3A1300B170E4 /* JscenoSampleAppTests */ = {
+		FF9951DB23964F080034405E /* JscenoSampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF56DCE1238E3A1300B170E4 /* JscenoSampleAppTests.swift */,
-				FF56DCE3238E3A1300B170E4 /* Info.plist */,
+				FF9951DC23964F080034405E /* JscenoSampleAppTests.swift */,
+				FF9951DE23964F080034405E /* Info.plist */,
 			);
 			path = JscenoSampleAppTests;
 			sourceTree = "<group>";
 		};
-		FF56DCEB238E3A1300B170E4 /* JscenoSampleAppUITests */ = {
+		FF9951E623964F080034405E /* JscenoSampleAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FF56DCEC238E3A1300B170E4 /* JscenoSampleAppUITests.swift */,
-				FF56DCEE238E3A1300B170E4 /* Info.plist */,
+				FF9951E723964F080034405E /* JscenoSampleAppUITests.swift */,
+				FF9951E923964F080034405E /* Info.plist */,
 			);
 			path = JscenoSampleAppUITests;
 			sourceTree = "<group>";
 		};
-		FF95AC4C23913497004C342F /* Resources */ = {
+		FFBFD4E123974FB100A0FA85 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
-				FF95AC4D239134F6004C342F /* gpxData.json */,
+				FFBFD4E22397501200A0FA85 /* suli.gpx */,
 			);
-			path = Resources;
+			path = GPX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */ = {
+		FF9951C123964F060034405E /* JscenoSampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF56DCF1238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */;
+			buildConfigurationList = FF9951EC23964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */;
 			buildPhases = (
-				228E6ADBEF3599F56BAAC1CA /* [CP] Check Pods Manifest.lock */,
-				FF56DCC3238E3A1000B170E4 /* Sources */,
-				FF56DCC4238E3A1000B170E4 /* Frameworks */,
-				FF56DCC5238E3A1000B170E4 /* Resources */,
-				D814F9C27D066857D54E1B57 /* [CP] Embed Pods Frameworks */,
+				86A5D2A0B40D30CED5279C30 /* [CP] Check Pods Manifest.lock */,
+				FF9951BE23964F060034405E /* Sources */,
+				FF9951BF23964F060034405E /* Frameworks */,
+				FF9951C023964F060034405E /* Resources */,
+				94C7D6A7520F4055163D3545 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,72 +224,72 @@
 			);
 			name = JscenoSampleApp;
 			productName = JscenoSampleApp;
-			productReference = FF56DCC7238E3A1000B170E4 /* JscenoSampleApp.app */;
+			productReference = FF9951C223964F060034405E /* JscenoSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF56DCDC238E3A1300B170E4 /* JscenoSampleAppTests */ = {
+		FF9951D723964F080034405E /* JscenoSampleAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF56DCF4238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */;
+			buildConfigurationList = FF9951EF23964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */;
 			buildPhases = (
-				ED366B92F4F0916D81564661 /* [CP] Check Pods Manifest.lock */,
-				FF56DCD9238E3A1300B170E4 /* Sources */,
-				FF56DCDA238E3A1300B170E4 /* Frameworks */,
-				FF56DCDB238E3A1300B170E4 /* Resources */,
+				98B8ED4B2367AF85B844E27B /* [CP] Check Pods Manifest.lock */,
+				FF9951D423964F080034405E /* Sources */,
+				FF9951D523964F080034405E /* Frameworks */,
+				FF9951D623964F080034405E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF56DCDF238E3A1300B170E4 /* PBXTargetDependency */,
+				FF9951DA23964F080034405E /* PBXTargetDependency */,
 			);
 			name = JscenoSampleAppTests;
 			productName = JscenoSampleAppTests;
-			productReference = FF56DCDD238E3A1300B170E4 /* JscenoSampleAppTests.xctest */;
+			productReference = FF9951D823964F080034405E /* JscenoSampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FF56DCE7238E3A1300B170E4 /* JscenoSampleAppUITests */ = {
+		FF9951E223964F080034405E /* JscenoSampleAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF56DCF7238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */;
+			buildConfigurationList = FF9951F223964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */;
 			buildPhases = (
-				A74848C31E61938872F8B1F6 /* [CP] Check Pods Manifest.lock */,
-				FF56DCE4238E3A1300B170E4 /* Sources */,
-				FF56DCE5238E3A1300B170E4 /* Frameworks */,
-				FF56DCE6238E3A1300B170E4 /* Resources */,
-				6B06BF12547B08CDF6AA8E76 /* [CP] Embed Pods Frameworks */,
+				9FBE0B29CF372BC1AB4A4BC2 /* [CP] Check Pods Manifest.lock */,
+				FF9951DF23964F080034405E /* Sources */,
+				FF9951E023964F080034405E /* Frameworks */,
+				FF9951E123964F080034405E /* Resources */,
+				EEBA4339CA1005AB98623E92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF56DCEA238E3A1300B170E4 /* PBXTargetDependency */,
+				FF9951E523964F080034405E /* PBXTargetDependency */,
 			);
 			name = JscenoSampleAppUITests;
 			productName = JscenoSampleAppUITests;
-			productReference = FF56DCE8238E3A1300B170E4 /* JscenoSampleAppUITests.xctest */;
+			productReference = FF9951E323964F080034405E /* JscenoSampleAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FF56DCBF238E3A1000B170E4 /* Project object */ = {
+		FF9951BA23964F060034405E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Choi;
 				TargetAttributes = {
-					FF56DCC6238E3A1000B170E4 = {
+					FF9951C123964F060034405E = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					FF56DCDC238E3A1300B170E4 = {
+					FF9951D723964F080034405E = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = FF56DCC6238E3A1000B170E4;
+						TestTargetID = FF9951C123964F060034405E;
 					};
-					FF56DCE7238E3A1300B170E4 = {
+					FF9951E223964F080034405E = {
 						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = FF56DCC6238E3A1000B170E4;
+						TestTargetID = FF9951C123964F060034405E;
 					};
 				};
 			};
-			buildConfigurationList = FF56DCC2238E3A1000B170E4 /* Build configuration list for PBXProject "JscenoSampleApp" */;
+			buildConfigurationList = FF9951BD23964F060034405E /* Build configuration list for PBXProject "JscenoSampleApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -286,38 +297,38 @@
 				en,
 				Base,
 			);
-			mainGroup = FF56DCBE238E3A1000B170E4;
-			productRefGroup = FF56DCC8238E3A1000B170E4 /* Products */;
+			mainGroup = FF9951B923964F060034405E;
+			productRefGroup = FF9951C323964F060034405E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */,
-				FF56DCDC238E3A1300B170E4 /* JscenoSampleAppTests */,
-				FF56DCE7238E3A1300B170E4 /* JscenoSampleAppUITests */,
+				FF9951C123964F060034405E /* JscenoSampleApp */,
+				FF9951D723964F080034405E /* JscenoSampleAppTests */,
+				FF9951E223964F080034405E /* JscenoSampleAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FF56DCC5238E3A1000B170E4 /* Resources */ = {
+		FF9951C023964F060034405E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF56DCD7238E3A1300B170E4 /* LaunchScreen.storyboard in Resources */,
-				FF95AC4E239134F6004C342F /* gpxData.json in Resources */,
-				FF56DCD4238E3A1300B170E4 /* Preview Assets.xcassets in Resources */,
-				FF56DCD1238E3A1300B170E4 /* Assets.xcassets in Resources */,
+				FF9951D223964F070034405E /* LaunchScreen.storyboard in Resources */,
+				FF9951CF23964F070034405E /* Preview Assets.xcassets in Resources */,
+				FFBFD4E32397501200A0FA85 /* suli.gpx in Resources */,
+				FF9951CC23964F070034405E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCDB238E3A1300B170E4 /* Resources */ = {
+		FF9951D623964F080034405E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCE6238E3A1300B170E4 /* Resources */ = {
+		FF9951E123964F080034405E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,7 +338,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		228E6ADBEF3599F56BAAC1CA /* [CP] Check Pods Manifest.lock */ = {
+		86A5D2A0B40D30CED5279C30 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,46 +360,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6B06BF12547B08CDF6AA8E76 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A74848C31E61938872F8B1F6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JscenoSampleApp-JscenoSampleAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D814F9C27D066857D54E1B57 /* [CP] Embed Pods Frameworks */ = {
+		94C7D6A7520F4055163D3545 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,7 +377,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp/Pods-JscenoSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED366B92F4F0916D81564661 /* [CP] Check Pods Manifest.lock */ = {
+		98B8ED4B2367AF85B844E27B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,57 +399,100 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FBE0B29CF372BC1AB4A4BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JscenoSampleApp-JscenoSampleAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBA4339CA1005AB98623E92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JscenoSampleApp-JscenoSampleAppUITests/Pods-JscenoSampleApp-JscenoSampleAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FF56DCC3238E3A1000B170E4 /* Sources */ = {
+		FF9951BE23964F060034405E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF56DCCB238E3A1000B170E4 /* AppDelegate.swift in Sources */,
-				FF56DCCD238E3A1000B170E4 /* SceneDelegate.swift in Sources */,
-				FF5BE244238F69B5004224E7 /* GPXRow.swift in Sources */,
-				FF56DCCF238E3A1000B170E4 /* ContentView.swift in Sources */,
-				FF5BE246238F6A01004224E7 /* GPX.swift in Sources */,
+				FF765ECC23989C2700786002 /* TrackInfo.swift in Sources */,
+				FF8BD3F72398BCCF00977B66 /* CreateGPXView.swift in Sources */,
+				FF887BFE2396503B00322F3A /* GPXListView.swift in Sources */,
+				FF765ECA23988DC900786002 /* GPX.swift in Sources */,
+				FF9951C623964F060034405E /* AppDelegate.swift in Sources */,
+				FF9951C823964F060034405E /* SceneDelegate.swift in Sources */,
+				FFBFD4E52397504800A0FA85 /* GPXManager.swift in Sources */,
+				FF9951CA23964F060034405E /* MapView.swift in Sources */,
+				FF765ECE2398A86B00786002 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCD9238E3A1300B170E4 /* Sources */ = {
+		FF9951D423964F080034405E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF56DCE2238E3A1300B170E4 /* JscenoSampleAppTests.swift in Sources */,
+				FF9951DD23964F080034405E /* JscenoSampleAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF56DCE4238E3A1300B170E4 /* Sources */ = {
+		FF9951DF23964F080034405E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF56DCED238E3A1300B170E4 /* JscenoSampleAppUITests.swift in Sources */,
+				FF9951E823964F080034405E /* JscenoSampleAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FF56DCDF238E3A1300B170E4 /* PBXTargetDependency */ = {
+		FF9951DA23964F080034405E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */;
-			targetProxy = FF56DCDE238E3A1300B170E4 /* PBXContainerItemProxy */;
+			target = FF9951C123964F060034405E /* JscenoSampleApp */;
+			targetProxy = FF9951D923964F080034405E /* PBXContainerItemProxy */;
 		};
-		FF56DCEA238E3A1300B170E4 /* PBXTargetDependency */ = {
+		FF9951E523964F080034405E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF56DCC6238E3A1000B170E4 /* JscenoSampleApp */;
-			targetProxy = FF56DCE9238E3A1300B170E4 /* PBXContainerItemProxy */;
+			target = FF9951C123964F060034405E /* JscenoSampleApp */;
+			targetProxy = FF9951E423964F080034405E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF56DCD5238E3A1300B170E4 /* LaunchScreen.storyboard */ = {
+		FF9951D023964F070034405E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FF56DCD6238E3A1300B170E4 /* Base */,
+				FF9951D123964F070034405E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -485,7 +500,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FF56DCEF238E3A1300B170E4 /* Debug */ = {
+		FF9951EA23964F080034405E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -545,7 +560,7 @@
 			};
 			name = Debug;
 		};
-		FF56DCF0238E3A1300B170E4 /* Release */ = {
+		FF9951EB23964F080034405E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -599,9 +614,9 @@
 			};
 			name = Release;
 		};
-		FF56DCF2238E3A1300B170E4 /* Debug */ = {
+		FF9951ED23964F080034405E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B85224FEEF3510211025986A /* Pods-JscenoSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 7E6ADB6E8B0B7CDA20E1D0A3 /* Pods-JscenoSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -609,6 +624,7 @@
 				DEVELOPMENT_TEAM = DUD734MXMD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JscenoSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,9 +636,9 @@
 			};
 			name = Debug;
 		};
-		FF56DCF3238E3A1300B170E4 /* Release */ = {
+		FF9951EE23964F080034405E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECAF4DBAB01D09AEA0668CD8 /* Pods-JscenoSampleApp.release.xcconfig */;
+			baseConfigurationReference = B2B1F0EC6E3EB90A9D1E6869 /* Pods-JscenoSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -630,6 +646,7 @@
 				DEVELOPMENT_TEAM = DUD734MXMD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = JscenoSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,9 +658,9 @@
 			};
 			name = Release;
 		};
-		FF56DCF5238E3A1300B170E4 /* Debug */ = {
+		FF9951F023964F080034405E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74F856D0E30222BE7930D847 /* Pods-JscenoSampleAppTests.debug.xcconfig */;
+			baseConfigurationReference = C792D108EC722D642C3BBBAA /* Pods-JscenoSampleAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -664,9 +681,9 @@
 			};
 			name = Debug;
 		};
-		FF56DCF6238E3A1300B170E4 /* Release */ = {
+		FF9951F123964F080034405E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 530C9C9AE354EC903A9ACE14 /* Pods-JscenoSampleAppTests.release.xcconfig */;
+			baseConfigurationReference = 7F12DC95204E43C693D40CF2 /* Pods-JscenoSampleAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,9 +704,9 @@
 			};
 			name = Release;
 		};
-		FF56DCF8238E3A1300B170E4 /* Debug */ = {
+		FF9951F323964F080034405E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 922CF974ABC6BF34444FBAE6 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */;
+			baseConfigurationReference = FB54C5AFE800567EAEB9E53F /* Pods-JscenoSampleApp-JscenoSampleAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,9 +725,9 @@
 			};
 			name = Debug;
 		};
-		FF56DCF9238E3A1300B170E4 /* Release */ = {
+		FF9951F423964F080034405E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BCE2E2C1E79245591E78980 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */;
+			baseConfigurationReference = 84D51C2BC9AB38F5B640B159 /* Pods-JscenoSampleApp-JscenoSampleAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -732,43 +749,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF56DCC2238E3A1000B170E4 /* Build configuration list for PBXProject "JscenoSampleApp" */ = {
+		FF9951BD23964F060034405E /* Build configuration list for PBXProject "JscenoSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF56DCEF238E3A1300B170E4 /* Debug */,
-				FF56DCF0238E3A1300B170E4 /* Release */,
+				FF9951EA23964F080034405E /* Debug */,
+				FF9951EB23964F080034405E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF56DCF1238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */ = {
+		FF9951EC23964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF56DCF2238E3A1300B170E4 /* Debug */,
-				FF56DCF3238E3A1300B170E4 /* Release */,
+				FF9951ED23964F080034405E /* Debug */,
+				FF9951EE23964F080034405E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF56DCF4238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */ = {
+		FF9951EF23964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF56DCF5238E3A1300B170E4 /* Debug */,
-				FF56DCF6238E3A1300B170E4 /* Release */,
+				FF9951F023964F080034405E /* Debug */,
+				FF9951F123964F080034405E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF56DCF7238E3A1300B170E4 /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */ = {
+		FF9951F223964F080034405E /* Build configuration list for PBXNativeTarget "JscenoSampleAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF56DCF8238E3A1300B170E4 /* Debug */,
-				FF56DCF9238E3A1300B170E4 /* Release */,
+				FF9951F323964F080034405E /* Debug */,
+				FF9951F423964F080034405E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF56DCBF238E3A1000B170E4 /* Project object */;
+	rootObject = FF9951BA23964F060034405E /* Project object */;
 }
