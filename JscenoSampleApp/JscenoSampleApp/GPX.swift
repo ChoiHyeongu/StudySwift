@@ -10,9 +10,10 @@ import Foundation
 
 class GPX {
     @Published var title: String
-    @Published var path: String = ""
+    @Published var path: String
     
-    init(title: String){
+    init(title: String, path: String){
         self.title = title
+        self.path = path
     }
 }

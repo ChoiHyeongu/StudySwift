@@ -17,7 +17,7 @@ struct CreateGPXView: View {
     
     var body: some View {
         ZStack {
-            MapView(mode: true, coordinates: locationManager.trackInfos.map({$0.coordinate}),coordinate:locationManager.location.coordinate).edgesIgnoringSafeArea(.all)
+            MapView(mode: true, coordinates: gpxManager.getCoordinates(trackInfos: locationManager.trackInfos),coordinate:locationManager.location.coordinate).edgesIgnoringSafeArea(.all)
             
             Button(action: {self.locationManager.statusButtonClicked()}) {
                 Text(!self.locationManager.isStart ? "Start" : "Stop")

@@ -17,6 +17,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published private(set) var location = CLLocation()
     @Published var isStart = true
     
+    let gpxManager = GPXManager()
+    
     private let locationManager: CLLocationManager
     
     override init() {
@@ -36,7 +38,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         if(isStart){
             isStart = false
             printGPXLocations()
-            makeGPXFile()
+            gpxManager.makeGPXFile(trackInfos: trackInfos)
         } else {
             isStart = true
         }
@@ -62,43 +64,5 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
             print ("Time : \(location.time)")
         }
         print ("---------------End GPXLocations Count : \(trackInfos.count)---------------")
-    }
-    
-    /*
-     GPX파일 만들기
-     */
-    func makeGPXFile(){
-        let root = GPXRoot(creator: "GPXMaker")
-        var trackpoints: [GPXTrackPoint] = []
-        
-        for location in trackInfos {
-            let coordinate = location.coordinate
-            let trackpoint = GPXTrackPoint(latitude: coordinate.latitude, longitude: coordinate.longitude)
-        
-            trackpoint.extensions = GPXExtensions()
-            trackpoint.elevation = location.elevation
-            trackpoint.time = location.time
-            trackpoint.extensions?.append(at: nil, contents: ["speed" : String(location.speed)])
-        
-            trackpoints.append(trackpoint)
-        }
-        
-        let track = GPXTrack()
-        let tracksegment = GPXTrackSegment()
-        
-        tracksegment.add(trackpoints: trackpoints)
-        track.add(trackSegment: tracksegment)
-        root.add(track: track)
-        
-        print(root.gpx())
-        
-        let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0] as URL
-        do {
-            try root.outputToFile(saveAt: url, fileName: "test")
-            print (url)
-        }
-        catch {
-            print(error)
-        }
     }
 }

@@ -23,6 +23,7 @@
 		FF9951D223964F070034405E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9951D023964F070034405E /* LaunchScreen.storyboard */; };
 		FF9951DD23964F080034405E /* JscenoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951DC23964F080034405E /* JscenoSampleAppTests.swift */; };
 		FF9951E823964F080034405E /* JscenoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9951E723964F080034405E /* JscenoSampleAppUITests.swift */; };
+		FFAE6D632399F15B00F28104 /* seoul.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FFAE6D622399F15B00F28104 /* seoul.gpx */; };
 		FFBFD4E32397501200A0FA85 /* suli.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FFBFD4E22397501200A0FA85 /* suli.gpx */; };
 		FFBFD4E52397504800A0FA85 /* GPXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFD4E42397504800A0FA85 /* GPXManager.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		FF9951E323964F080034405E /* JscenoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JscenoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9951E723964F080034405E /* JscenoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JscenoSampleAppUITests.swift; sourceTree = "<group>"; };
 		FF9951E923964F080034405E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFAE6D622399F15B00F28104 /* seoul.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = seoul.gpx; sourceTree = "<group>"; };
 		FFBFD4E22397501200A0FA85 /* suli.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = suli.gpx; sourceTree = "<group>"; };
 		FFBFD4E42397504800A0FA85 /* GPXManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 		FFBFD4E123974FB100A0FA85 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				FFAE6D622399F15B00F28104 /* seoul.gpx */,
 				FFBFD4E22397501200A0FA85 /* suli.gpx */,
 			);
 			path = GPX;
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAE6D632399F15B00F28104 /* seoul.gpx in Resources */,
 				FF9951D223964F070034405E /* LaunchScreen.storyboard in Resources */,
 				FF9951CF23964F070034405E /* Preview Assets.xcassets in Resources */,
 				FFBFD4E32397501200A0FA85 /* suli.gpx in Resources */,

@@ -12,7 +12,6 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     var mode: Bool
-    var isStart = true
     var coordinates: [CLLocationCoordinate2D] = []
     var coordinate: CLLocationCoordinate2D?
     
@@ -26,16 +25,20 @@ struct MapView: UIViewRepresentable {
         view.delegate = mapViewDelegate
         view.translatesAutoresizingMaskIntoConstraints = false
         
-        mode ? gpxDrawMode(view, coordinate: coordinate!) :gpxShowMode(view)
-    }
-    
-    /*
-     GPX 파일을 열 때
-     */
-    func gpxShowMode(_ view: MKMapView){
         var coordinate: CLLocationCoordinate2D
         
-        coordinate = self.coordinates[0]
+        if(mode){
+            coordinate = self.coordinate!
+            
+            view.removeAnnotations(view.annotations)
+            view.removeOverlays(view.overlays)
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            view.addAnnotation(annotation)
+        } else {
+            coordinate = coordinates[0]
+        }
         
         let span = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
         let region = MKCoordinateRegion(center: coordinate, span: span)
@@ -45,30 +48,6 @@ struct MapView: UIViewRepresentable {
             self.coordinates.count)
         
         view.addOverlay(polyline)
-    }
-    
-    /*
-     GPX를 만들 때
-     */
-    func gpxDrawMode(_ view: MKMapView, coordinate: CLLocationCoordinate2D){
-        
-        if(isStart){
-            view.removeAnnotations(view.annotations)
-            view.removeOverlays(view.overlays)
-            
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = coordinate
-            view.addAnnotation(annotation)
-            
-            let span = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
-            view.setRegion(region, animated: true)
-            
-            let polyline = MKPolyline(coordinates: self.coordinates, count:
-                self.coordinates.count)
-            
-            view.addOverlay(polyline)
-        }
     }
     
     class MapViewDelegate: NSObject, MKMapViewDelegate {
@@ -84,6 +63,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(mode: true)
+        MapView(mode: false)
     }
 }
