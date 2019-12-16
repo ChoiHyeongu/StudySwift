@@ -9,9 +9,9 @@
 import Foundation
 import SwiftUI
 
-class Todo{
-    @Published var title: String
-    @Published var isDone: Bool
+class Todo {
+    var title: String
+    var isDone: Bool
     
     init(title: String, isDone: Bool){
         self.title = title
