@@ -1,8 +1,8 @@
 //
 //  TodoRow.swift
-//  TODOAPP
+//  ListWithBinding
 //
-//  Created by Choi on 2019/12/16.
+//  Created by Choi on 2019/12/17.
 //  Copyright © 2019 motivatin. All rights reserved.
 //
 
@@ -21,7 +21,6 @@ struct TodoRow: View {
             Text(todo.title)
                 .strikethrough(todo.isDone)
             Spacer()
-            LabelView(name: todo.label, todo: $todo)
         }
     }
 }

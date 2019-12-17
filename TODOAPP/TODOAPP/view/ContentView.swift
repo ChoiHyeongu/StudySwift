@@ -9,8 +9,6 @@
 import SwiftUI
 
 struct TodoListView: View {
-    
-    @State var showPopover = false
     @State var todos = [
         Todo(title: "Study SwiftUI, Combine", isDone: true),
         Todo(title: "Solve Jsceno Issue #33", isDone: false),
@@ -19,9 +17,11 @@ struct TodoListView: View {
         Todo(title: "Remove Visual Studio Code", isDone: false),
     ]
     
+    let defaultTodo = Todo(title: "Enter the title", isDone: false)
+    
     var body: some View {
         NavigationView {
-            List(todos.indices){ index in
+            List(todos.indices, id:\.self){ index in
                 NavigationLink(destination: DetailView(todo: self.$todos[index])){
                     TodoRow(todo: self.$todos[index])
                 }
@@ -29,16 +29,13 @@ struct TodoListView: View {
             .navigationBarTitle("오늘 할 일")
             .navigationBarItems(trailing: Button(action: {self.didTapAddButton()}) {
                 Image(systemName: "plus")
-                    .foregroundColor(.black)
-                    .popover(isPresented: $showPopover, arrowEdge: .bottom){
-                        TodoInputView()
-                }
+                    .foregroundColor(.white)
             })
         }
     }
     
     func didTapAddButton(){
-        showPopover = !showPopover ? true : false
+        self.todos.append(defaultTodo)
     }
 }
 

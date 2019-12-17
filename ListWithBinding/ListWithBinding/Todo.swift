@@ -1,20 +1,18 @@
 //
 //  Todo.swift
-//  TODOAPP
+//  ListWithBinding
 //
-//  Created by Choi on 2019/12/13.
+//  Created by Choi on 2019/12/17.
 //  Copyright © 2019 motivatin. All rights reserved.
 //
 
 import Foundation
 import SwiftUI
 
-struct Todo {
-    //var id = UUID()
+struct Todo: Identifiable {
+    var id = UUID()
     var title: String
     var isDone: Bool
-    var label: Label = .none
-    var memo: String = ""
     
     init(title: String, isDone: Bool){
         self.title = title

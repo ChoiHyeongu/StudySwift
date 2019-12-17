@@ -17,25 +17,28 @@ struct DetailView: View {
     var body: some View {
         VStack(alignment: .leading){
             TextField("Enter the TODO title", text:$todo.title)
-                .font(.system(size: 40, weight: .heavy, design: .default))
+                .font(.system(size: 25, weight: .heavy))
             Divider()
             Text("Label")
-                .font(.title)
-                .fontWeight(.bold)
+                .font(.system(size: 20, weight: .regular))
             LabelList
+            Text("Memo")
+            TextField("Enter some memo here", text: $todo.memo)
             Spacer()
         }
+        .padding(.leading, 5)
     }
     
     var LabelList: some View {
         ScrollView (.horizontal, showsIndicators: false) {
             HStack{
-                LabelView(name: .important)
-                LabelView(name: .optional)
-                LabelView(name: .time)
-                LabelView(name: .before)
-                LabelView(name: .after)
-            }.padding()
+                LabelView(name: .important, todo: $todo)
+                LabelView(name: .optional, todo: $todo)
+                LabelView(name: .time, todo: $todo)
+                LabelView(name: .before, todo: $todo)
+                LabelView(name: .after, todo: $todo)
+            }
+            .padding(.leading, 5)
         }
     }
 }
