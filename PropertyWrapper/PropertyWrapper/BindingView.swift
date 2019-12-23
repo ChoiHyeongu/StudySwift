@@ -11,6 +11,7 @@ import SwiftUI
 struct BindingView: View {
     
     @Binding private var username: String
+    @Published var a: String = "123"
     
     init(username: Binding<String>){
         self._username = username
