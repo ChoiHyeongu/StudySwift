@@ -9,7 +9,6 @@
 import Foundation
 import CoreLocation
 import Combine
-import CoreGPX
 
 class LocationObserver: NSObject, ObservableObject, CLLocationManagerDelegate {
     

@@ -11,23 +11,8 @@ import SwiftUI
 struct TodoListView: View {
   let db = Firestore.firestore()
   let defaultTodo = Todo(title: "Enter the title", isDone: false)
-
-  var ref: DocumentReference?
+  @State var ref: DocumentReference? = nil
   @State var todos: [Todo] = []
-
-  init() {
-    ref = db.collection("todo").addDocument(data: [
-        "title": "Jsceno Issue #75",
-        "isDone": false,
-        "date": Date()
-    ]) { err in
-        if let err = err {
-            print("Error adding document: \(err)")
-        } else {
-            print("Document added")
-        }
-    }
-  }
 
   var body: some View {
     NavigationView {
@@ -36,16 +21,44 @@ struct TodoListView: View {
           TodoRow(todo: self.$todos[index])
         }
       }
+      .onAppear{
+        self.readDatabase()
+      }
       .navigationBarTitle("오늘 할 일")
       .navigationBarItems(trailing: Button(action: { self.didTapAddButton() }) {
         Image(systemName: "plus")
-          .foregroundColor(.white)
+          .foregroundColor(.black)
       })
     }
   }
 
   func didTapAddButton() {
-    todos.append(defaultTodo)
+    ref = db.collection("todos").addDocument(data: [
+      "title": defaultTodo.title,
+      "isDone": defaultTodo.isDone,
+    ]) { err in
+      if let err = err {
+        print("Error adding document: \(err)")
+      } else {
+        print("Success")
+        self.readDatabase()
+      }
+    }
+  }
+
+  func readDatabase() {
+    db.collection("todos").getDocuments { querySnapshot, err in
+      if let err = err {
+        print("================")
+        print("Error getting documents: \(err)")
+      } else {
+        for document in querySnapshot!.documents {
+          print("================")
+          self.todos.append(Todo(title: document.get("title") as! String, isDone: (document.get("isDone") != nil)))
+          print("\(document.documentID) => \(document.data())")
+        }
+      }
+    }
   }
 }
 
