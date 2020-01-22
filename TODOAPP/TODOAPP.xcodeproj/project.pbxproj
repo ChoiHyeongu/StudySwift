@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F9FF26DDF6E263053D340E4 /* libPods-TODOAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB8E4FCDA8CF80AF0A1EC0C /* libPods-TODOAPP.a */; };
 		DE637D8B23C2EF1E001CCD91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE637D8A23C2EF1E001CCD91 /* GoogleService-Info.plist */; };
+		DEC3BB6123D830E4008048F4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC3BB6023D830E4008048F4 /* ContentViewModel.swift */; };
 		FF3B9EBA23A3D57E00708BA2 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B9EB923A3D57E00708BA2 /* Todo.swift */; };
 		FF84961E23A756B7007FBB42 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84961D23A756B7007FBB42 /* DetailView.swift */; };
 		FFB2608623A76BA9001C02C6 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB2608523A76BA9001C02C6 /* LabelView.swift */; };
@@ -25,6 +26,7 @@
 		8187F7A5AB57625DEE65DE47 /* Pods-TODOAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOAPP.release.xcconfig"; path = "Target Support Files/Pods-TODOAPP/Pods-TODOAPP.release.xcconfig"; sourceTree = "<group>"; };
 		DBB8E4FCDA8CF80AF0A1EC0C /* libPods-TODOAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TODOAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE637D8A23C2EF1E001CCD91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEC3BB6023D830E4008048F4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FE85150B9C224E1D00F6CAF8 /* Pods-TODOAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TODOAPP.debug.xcconfig"; path = "Target Support Files/Pods-TODOAPP/Pods-TODOAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		FF3B9EB923A3D57E00708BA2 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		FF84961D23A756B7007FBB42 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DEC3BB5F23D830D3008048F4 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				DEC3BB6023D830E4008048F4 /* ContentViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		FF84961F23A759ED007FBB42 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		FFE3A50423A3864A00AE1079 /* TODOAPP */ = {
 			isa = PBXGroup;
 			children = (
+				DEC3BB5F23D830D3008048F4 /* viewmodel */,
 				FF84962023A75A01007FBB42 /* view */,
 				FF84961F23A759ED007FBB42 /* model */,
 				FFE3A50523A3864A00AE1079 /* AppDelegate.swift */,
@@ -246,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC3BB6123D830E4008048F4 /* ContentViewModel.swift in Sources */,
 				FFE3A50623A3864A00AE1079 /* AppDelegate.swift in Sources */,
 				FFFD957523A72B41001D851D /* TodoRow.swift in Sources */,
 				FFE3A50823A3864A00AE1079 /* SceneDelegate.swift in Sources */,

@@ -9,61 +9,29 @@ import Firebase
 import SwiftUI
 
 struct TodoListView: View {
-  let db = Firestore.firestore()
-  let defaultTodo = Todo(title: "Enter the title", isDone: false)
-  @State var ref: DocumentReference? = nil
-  @State var todos: [Todo] = []
+  @ObservedObject var contentViewModel: ContentViewModel
 
   var body: some View {
     NavigationView {
-      List(todos.indices, id: \.self) { index in
-        NavigationLink(destination: DetailView(todo: self.$todos[index])) {
-          TodoRow(todo: self.$todos[index])
+      List(contentViewModel.todos.indices, id: \.self) { index in
+        NavigationLink(destination: DetailView(todo: self.$contentViewModel.todos[index])) {
+          TodoRow(todo: self.$contentViewModel.todos[index])
         }
       }
-      .onAppear{
-        self.readDatabase()
+      .onAppear {
+        self.contentViewModel.getTodoItems()
       }
       .navigationBarTitle("오늘 할 일")
-      .navigationBarItems(trailing: Button(action: { self.didTapAddButton() }) {
+      .navigationBarItems(trailing: Button(action: { self.contentViewModel.didTapAddButton() }) {
         Image(systemName: "plus")
           .foregroundColor(.black)
       })
-    }
-  }
-
-  func didTapAddButton() {
-    ref = db.collection("todos").addDocument(data: [
-      "title": defaultTodo.title,
-      "isDone": defaultTodo.isDone,
-    ]) { err in
-      if let err = err {
-        print("Error adding document: \(err)")
-      } else {
-        print("Success")
-        self.readDatabase()
-      }
-    }
-  }
-
-  func readDatabase() {
-    db.collection("todos").getDocuments { querySnapshot, err in
-      if let err = err {
-        print("================")
-        print("Error getting documents: \(err)")
-      } else {
-        for document in querySnapshot!.documents {
-          print("================")
-          self.todos.append(Todo(title: document.get("title") as! String, isDone: (document.get("isDone") != nil)))
-          print("\(document.documentID) => \(document.data())")
-        }
-      }
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    TodoListView()
+    TodoListView(contentViewModel: ContentViewModel())
   }
 }
