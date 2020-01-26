@@ -6,15 +6,15 @@
 //  Copyright © 2020 motivatin. All rights reserved.
 //
 
-import Foundation
 import Firebase
+import Foundation
 
 class ContentViewModel: ObservableObject {
   let db = Firestore.firestore()
   let defaultTodo = Todo(title: "Enter the title", isDone: false)
-  var ref: DocumentReference? = nil
+  var ref: DocumentReference?
   @Published var todos: [Todo] = []
-  
+
   func didTapAddButton() {
     ref = db.collection("todos").addDocument(data: [
       "title": defaultTodo.title,
@@ -29,18 +29,24 @@ class ContentViewModel: ObservableObject {
   }
 
   func getTodoItems() {
-    db.collection("todos")
-      .getDocuments { querySnapshot, err in
-      if let err = err {
-        print("================")
-        print("Error getting documents: \(err)")
-      } else {
-        for document in querySnapshot!.documents {
+    var listener: ListenerRegistration?
+    listener = db.collection("todos")
+      .addSnapshotListener { querySnapshot, err in
+        listener?.remove()
+
+        if let err = err {
           print("================")
-          self.todos.append(Todo(title: document.get("title") as! String, isDone: document.get("isDone") != nil))
-          print("\(document.documentID) => \(document.data())")
+          print("Error getting documents: \(err)")
+        } else {
+          _ = querySnapshot!.documents.map {
+            let data = $0.data()
+            self.todos.append(
+              Todo(title: data["title"] as? String ?? "Untitled",
+                   isDone: data["isDone"] as? Bool ?? false)
+            )
+            print("Data: \(data)")
+          }
         }
       }
-    }
   }
 }
