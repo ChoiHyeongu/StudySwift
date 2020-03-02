@@ -19,7 +19,11 @@ class BleScanner {
 
   func pair() {
     _ = waitForBluetooth(pairStep)
-      .flatMap { _ in self.scanForPeripheral(self.pairStep) }
+      .subscribe(onNext: {
+        if $0 == .poweredOn {
+          self.scanForPeripheral()
+        }
+      })
   }
 
   private func waitForBluetooth(_ progress: BehaviorRelay<PairingStep>) -> Observable<BluetoothState> {
@@ -31,19 +35,16 @@ class BleScanner {
       .take(1)
   }
 
-  // Step 2. Scan
-  private func scanForPeripheral(_ progress: BehaviorRelay<PairingStep>) -> Observable<ScannedPeripheral> {
-    progress.accept(.scanning)
-    return manager
+  private func scanForPeripheral() {
+    _ = manager
       .scanForPeripherals(withServices: nil)
       .take(1)
       .timeoutIfNoEvent(timeout)
-      .do(onNext: {
-        progress.accept(.peripheralDiscovered(peripheral: $0.peripheral.name ?? ""))
+      .subscribe(onNext: {
+        self.addScannedPeripheral($0)
       })
   }
 
-  // Step 3. Connect
   private func connect(to peripheral: ScannedPeripheral, progress: AnyObserver<PairingStep>) -> Observable<Peripheral> {
     progress.onNext(.connecting)
     return peripheral.peripheral
@@ -52,7 +53,6 @@ class BleScanner {
       .do(onNext: { _ in progress.onNext(.connected) })
   }
 
-  // Step 4. Receive initial data
   private func getData(from peripheral: Peripheral, progress: AnyObserver<PairingStep>) -> Observable<Characteristic> {
     progress.onNext(.receivingInitialData)
 
