@@ -14,11 +14,7 @@
 		DEFE297A2408D2E1004DA59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFE29782408D2E1004DA59A /* Main.storyboard */; };
 		DEFE297C2408D2E3004DA59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEFE297B2408D2E3004DA59A /* Assets.xcassets */; };
 		DEFE297F2408D2E3004DA59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFE297D2408D2E3004DA59A /* LaunchScreen.storyboard */; };
-		DEFE298A2408D54E004DA59A /* BleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE29882408D54E004DA59A /* BleTableViewCell.swift */; };
-		DEFE298B2408D54E004DA59A /* BleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEFE29892408D54E004DA59A /* BleTableViewCell.xib */; };
-		DEFE298D2408D72C004DA59A /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE298C2408D72C004DA59A /* TableViewModel.swift */; };
-		DEFE29902408DB09004DA59A /* BleScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE298F2408DB09004DA59A /* BleScanner.swift */; };
-		DEFE29932408E084004DA59A /* ObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE29922408E084004DA59A /* ObservableExtension.swift */; };
+		DEFE298D2408D72C004DA59A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE298C2408D72C004DA59A /* ViewModel.swift */; };
 		DEFE29962408E0B6004DA59A /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE29952408E0B6004DA59A /* Enum.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,11 +29,7 @@
 		DEFE297B2408D2E3004DA59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEFE297E2408D2E3004DA59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEFE29802408D2E3004DA59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEFE29882408D54E004DA59A /* BleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleTableViewCell.swift; sourceTree = "<group>"; };
-		DEFE29892408D54E004DA59A /* BleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BleTableViewCell.xib; sourceTree = "<group>"; };
-		DEFE298C2408D72C004DA59A /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		DEFE298F2408DB09004DA59A /* BleScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleScanner.swift; sourceTree = "<group>"; };
-		DEFE29922408E084004DA59A /* ObservableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExtension.swift; sourceTree = "<group>"; };
+		DEFE298C2408D72C004DA59A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DEFE29952408E0B6004DA59A /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		ECAF346F25860F5C2D004DA3 /* Pods-RxBluetoothKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxBluetoothKitExample.release.xcconfig"; path = "Target Support Files/Pods-RxBluetoothKitExample/Pods-RxBluetoothKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,10 +90,8 @@
 				DEFE29722408D2E1004DA59A /* AppDelegate.swift */,
 				DEFE29742408D2E1004DA59A /* SceneDelegate.swift */,
 				DEFE29762408D2E1004DA59A /* ViewController.swift */,
-				DEFE298C2408D72C004DA59A /* TableViewModel.swift */,
+				DEFE298C2408D72C004DA59A /* ViewModel.swift */,
 				DEFE29782408D2E1004DA59A /* Main.storyboard */,
-				DEFE29882408D54E004DA59A /* BleTableViewCell.swift */,
-				DEFE29892408D54E004DA59A /* BleTableViewCell.xib */,
 				DEFE297B2408D2E3004DA59A /* Assets.xcassets */,
 				DEFE297D2408D2E3004DA59A /* LaunchScreen.storyboard */,
 				DEFE29802408D2E3004DA59A /* Info.plist */,
@@ -112,7 +102,6 @@
 		DEFE298E2408DAD0004DA59A /* BLE */ = {
 			isa = PBXGroup;
 			children = (
-				DEFE298F2408DB09004DA59A /* BleScanner.swift */,
 			);
 			path = BLE;
 			sourceTree = "<group>";
@@ -120,7 +109,6 @@
 		DEFE29912408E075004DA59A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DEFE29922408E084004DA59A /* ObservableExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -196,7 +184,6 @@
 				DEFE297F2408D2E3004DA59A /* LaunchScreen.storyboard in Resources */,
 				DEFE297C2408D2E3004DA59A /* Assets.xcassets in Resources */,
 				DEFE297A2408D2E1004DA59A /* Main.storyboard in Resources */,
-				DEFE298B2408D54E004DA59A /* BleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFE29932408E084004DA59A /* ObservableExtension.swift in Sources */,
 				DEFE29772408D2E1004DA59A /* ViewController.swift in Sources */,
 				DEFE29962408E0B6004DA59A /* Enum.swift in Sources */,
-				DEFE298D2408D72C004DA59A /* TableViewModel.swift in Sources */,
+				DEFE298D2408D72C004DA59A /* ViewModel.swift in Sources */,
 				DEFE29732408D2E1004DA59A /* AppDelegate.swift in Sources */,
 				DEFE29752408D2E1004DA59A /* SceneDelegate.swift in Sources */,
-				DEFE298A2408D54E004DA59A /* BleTableViewCell.swift in Sources */,
-				DEFE29902408DB09004DA59A /* BleScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

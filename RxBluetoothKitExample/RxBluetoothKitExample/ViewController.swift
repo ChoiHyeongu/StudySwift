@@ -12,44 +12,33 @@ import RxSwift
 import UIKit
 
 class ViewController: UIViewController {
-  @IBOutlet var tableview: UITableView!
-
-  let tableViewModel = TableViewModel()
-  let bleScanner = BleScanner()
-  var pairing: Disposable?
+  @IBOutlet weak var reButton: UIButton!
+  @IBOutlet weak var signalButton: UIButton!
+  
+  let viewmodel = ViewModel()
+  let disposeBag = DisposeBag()
 
   override func viewDidLoad() {
-    configureTable()
-
     super.viewDidLoad()
+    configureViewModel()
+    viewmodel.startScan()
   }
-
-  func configureTable() {
-    tableview.delegate = self
-    tableview.dataSource = self
-
-    let nibName = UINib(nibName: "BleTableViewCell", bundle: nil)
-    tableview.register(nibName, forCellReuseIdentifier: "bleCell")
-
-    _ = tableViewModel.devices
-        .subscribe { self.tableview.reloadData() }
-
-    tableViewModel.scanBle()
-  }
-}
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return tableViewModel.devices.value.count
-  }
-
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "bleCell", for: indexPath) as! BleTableViewCell
-
-    cell.bleTitleLabel.text = tableViewModel.devices.value[indexPath.row].peripheral.name ?? ""
-    cell.signalLabel.text = "100"
-    cell.bleTitleLabel.sizeToFit()
-
-    return cell
+  
+  func configureViewModel() {
+    reButton
+    .rx
+    .tap
+    .bind(onNext: {
+      self.viewmodel.connect()
+    })
+    .disposed(by: disposeBag)
+    
+    signalButton
+    .rx
+    .tap
+    .bind(onNext: {
+      self.viewmodel.writeSingal()
+    })
+    .disposed(by: disposeBag)
   }
 }
