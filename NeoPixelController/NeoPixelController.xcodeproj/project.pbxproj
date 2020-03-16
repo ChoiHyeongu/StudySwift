@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE1E1375241FA90D001ED95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1374241FA90D001ED95E /* AppDelegate.swift */; };
+		DE1E1377241FA90D001ED95E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1376241FA90D001ED95E /* SceneDelegate.swift */; };
+		DE1E1379241FA90D001ED95E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1378241FA90D001ED95E /* ContentView.swift */; };
+		DE1E137B241FA911001ED95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1E137A241FA911001ED95E /* Assets.xcassets */; };
+		DE1E137E241FA911001ED95E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1E137D241FA911001ED95E /* Preview Assets.xcassets */; };
+		DE1E1381241FA911001ED95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1E137F241FA911001ED95E /* LaunchScreen.storyboard */; };
+		DE1E138E241FAFF8001ED95E /* RGBControllerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE1E1371241FA90D001ED95E /* NeoPixelController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoPixelController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1E1374241FA90D001ED95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE1E1376241FA90D001ED95E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE1E1378241FA90D001ED95E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE1E137A241FA911001ED95E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE1E137D241FA911001ED95E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE1E1380241FA911001ED95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE1E1382241FA911001ED95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBControllerScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE1E136E241FA90D001ED95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE1E1368241FA90D001ED95E = {
+			isa = PBXGroup;
+			children = (
+				DE1E1373241FA90D001ED95E /* NeoPixelController */,
+				DE1E1372241FA90D001ED95E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE1E1372241FA90D001ED95E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E1371241FA90D001ED95E /* NeoPixelController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1E1373241FA90D001ED95E /* NeoPixelController */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E138C241FAFAD001ED95E /* scene */,
+				DE1E138B241FAF99001ED95E /* model */,
+				DE1E138A241FAF8F001ED95E /* view */,
+				DE1E1388241FAF72001ED95E /* viewmodel */,
+				DE1E1374241FA90D001ED95E /* AppDelegate.swift */,
+				DE1E1376241FA90D001ED95E /* SceneDelegate.swift */,
+				DE1E137A241FA911001ED95E /* Assets.xcassets */,
+				DE1E137F241FA911001ED95E /* LaunchScreen.storyboard */,
+				DE1E1382241FA911001ED95E /* Info.plist */,
+				DE1E137C241FA911001ED95E /* Preview Content */,
+			);
+			path = NeoPixelController;
+			sourceTree = "<group>";
+		};
+		DE1E137C241FA911001ED95E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E137D241FA911001ED95E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE1E1388241FAF72001ED95E /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		DE1E138A241FAF8F001ED95E /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DE1E138B241FAF99001ED95E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DE1E138C241FAFAD001ED95E /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				DE1E1378241FA90D001ED95E /* ContentView.swift */,
+				DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */,
+			);
+			path = scene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE1E1370241FA90D001ED95E /* NeoPixelController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1E1385241FA911001ED95E /* Build configuration list for PBXNativeTarget "NeoPixelController" */;
+			buildPhases = (
+				DE1E136D241FA90D001ED95E /* Sources */,
+				DE1E136E241FA90D001ED95E /* Frameworks */,
+				DE1E136F241FA90D001ED95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeoPixelController;
+			productName = NeoPixelController;
+			productReference = DE1E1371241FA90D001ED95E /* NeoPixelController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE1E1369241FA90D001ED95E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Choi;
+				TargetAttributes = {
+					DE1E1370241FA90D001ED95E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DE1E136C241FA90D001ED95E /* Build configuration list for PBXProject "NeoPixelController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE1E1368241FA90D001ED95E;
+			productRefGroup = DE1E1372241FA90D001ED95E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE1E1370241FA90D001ED95E /* NeoPixelController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE1E136F241FA90D001ED95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1E1381241FA911001ED95E /* LaunchScreen.storyboard in Resources */,
+				DE1E137E241FA911001ED95E /* Preview Assets.xcassets in Resources */,
+				DE1E137B241FA911001ED95E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE1E136D241FA90D001ED95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1E138E241FAFF8001ED95E /* RGBControllerScene.swift in Sources */,
+				DE1E1375241FA90D001ED95E /* AppDelegate.swift in Sources */,
+				DE1E1377241FA90D001ED95E /* SceneDelegate.swift in Sources */,
+				DE1E1379241FA90D001ED95E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE1E137F241FA911001ED95E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE1E1380241FA911001ED95E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE1E1383241FA911001ED95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE1E1384241FA911001ED95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE1E1386241FA911001ED95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoPixelController/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NeoPixelController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choi.NeoPixelController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE1E1387241FA911001ED95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NeoPixelController/Preview Content\"";
+				DEVELOPMENT_TEAM = DUD734MXMD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NeoPixelController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.choi.NeoPixelController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE1E136C241FA90D001ED95E /* Build configuration list for PBXProject "NeoPixelController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1E1383241FA911001ED95E /* Debug */,
+				DE1E1384241FA911001ED95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1E1385241FA911001ED95E /* Build configuration list for PBXNativeTarget "NeoPixelController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE1E1386241FA911001ED95E /* Debug */,
+				DE1E1387241FA911001ED95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE1E1369241FA90D001ED95E /* Project object */;
+}
