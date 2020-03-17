@@ -1,0 +1,22 @@
+PODS:
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+  - PhotoSlider (1.1.0):
+    - Kingfisher
+
+DEPENDENCIES:
+  - PhotoSlider
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - PhotoSlider
+
+SPEC CHECKSUMS:
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  PhotoSlider: be8d6cae5b95b94ea60a744390ebd93c3f0f0551
+
+PODFILE CHECKSUM: a8621500d4e53e74b4378eaef79958d827f1fd4f
+
+COCOAPODS: 1.8.4
