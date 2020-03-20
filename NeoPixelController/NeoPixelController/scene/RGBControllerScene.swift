@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct RGBControllerScene: View {
+  @Binding var currentScene: Scene
   @State var red: Double = 0
   @State var green: Double = 0
   @State var blue: Double = 0
@@ -16,12 +17,32 @@ struct RGBControllerScene: View {
 
   var body: some View {
     VStack {
+      Header
+      Spacer().frame(width: 1, height: 80, alignment: .center)
       RGBInfoView
 
       Color(red: red / 255, green: green / 255, blue: blue / 255, opacity: white / 255)
-        .frame(width: 350, height: 350, alignment: .center)
+        .frame(width: 250, height: 250, alignment: .center)
 
       RGBSlider
+
+      SaveButton
+    }
+  }
+
+  var Header: some View {
+    HStack {
+      Button(action: { self.currentScene = .list }) {
+        Text("List")
+      }
+      .padding(.leading, 10)
+
+      Spacer()
+
+      Button(action: { self.currentScene = .controller }) {
+        Text("Pattern")
+      }
+      .padding(.trailing, 10)
     }
   }
 
@@ -44,6 +65,15 @@ struct RGBControllerScene: View {
     }
   }
 
+  var SaveButton: some View {
+    Button(action: {
+      print("Save")
+    }) {
+      Text("Save")
+    }
+    .padding(.bottom, 25)
+  }
+
   func ColorValueView(_ type: String, _ value: Double) -> some View {
     HStack {
       Text("\(type) : \(Int(value))")
@@ -55,6 +85,6 @@ struct RGBControllerScene: View {
 
 struct RGBControllerScene_Previews: PreviewProvider {
   static var previews: some View {
-    RGBControllerScene()
+    RGBControllerScene(currentScene: .constant(.controller))
   }
 }

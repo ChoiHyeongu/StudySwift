@@ -9,13 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        RGBControllerScene()
+  @State var currentScreen: Scene = .controller
+
+  var body: some View {
+    Group {
+      ContainView()
     }
+  }
+
+  func ContainView() -> AnyView {
+    switch currentScreen {
+    case .controller: return AnyView(RGBControllerScene(currentScene: self.$currentScreen))
+    case .list: return AnyView(RGBListScene(currentScene: self.$currentScreen))
+    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

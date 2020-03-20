@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE007D2D242107C6003884C3 /* RGBListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE007D2C242107C6003884C3 /* RGBListScene.swift */; };
+		DE007D3024210C9D003884C3 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE007D2F24210C9D003884C3 /* Enum.swift */; };
 		DE1E1375241FA90D001ED95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1374241FA90D001ED95E /* AppDelegate.swift */; };
 		DE1E1377241FA90D001ED95E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1376241FA90D001ED95E /* SceneDelegate.swift */; };
 		DE1E1379241FA90D001ED95E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E1378241FA90D001ED95E /* ContentView.swift */; };
@@ -14,9 +16,14 @@
 		DE1E137E241FA911001ED95E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1E137D241FA911001ED95E /* Preview Assets.xcassets */; };
 		DE1E1381241FA911001ED95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1E137F241FA911001ED95E /* LaunchScreen.storyboard */; };
 		DE1E138E241FAFF8001ED95E /* RGBControllerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */; };
+		DEE3393224250ABD004F79D5 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3393124250ABD004F79D5 /* FileManager.swift */; };
+		DEE3393424250C7C004F79D5 /* RGBListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3393324250C7C004F79D5 /* RGBListViewModel.swift */; };
+		DEE3393624250CCE004F79D5 /* RGBW.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3393524250CCE004F79D5 /* RGBW.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE007D2C242107C6003884C3 /* RGBListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBListScene.swift; sourceTree = "<group>"; };
+		DE007D2F24210C9D003884C3 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		DE1E1371241FA90D001ED95E /* NeoPixelController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoPixelController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1E1374241FA90D001ED95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE1E1376241FA90D001ED95E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		DE1E1380241FA911001ED95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE1E1382241FA911001ED95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBControllerScene.swift; sourceTree = "<group>"; };
+		DEE3393124250ABD004F79D5 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		DEE3393324250C7C004F79D5 /* RGBListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBListViewModel.swift; sourceTree = "<group>"; };
+		DEE3393524250CCE004F79D5 /* RGBW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBW.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE007D2E24210C91003884C3 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				DE007D2F24210C9D003884C3 /* Enum.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
 		DE1E1368241FA90D001ED95E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +76,8 @@
 		DE1E1373241FA90D001ED95E /* NeoPixelController */ = {
 			isa = PBXGroup;
 			children = (
+				DEE3393024250AA4004F79D5 /* manager */,
+				DE007D2E24210C91003884C3 /* enum */,
 				DE1E138C241FAFAD001ED95E /* scene */,
 				DE1E138B241FAF99001ED95E /* model */,
 				DE1E138A241FAF8F001ED95E /* view */,
@@ -83,6 +103,7 @@
 		DE1E1388241FAF72001ED95E /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				DEE3393324250C7C004F79D5 /* RGBListViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -97,6 +118,7 @@
 		DE1E138B241FAF99001ED95E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DEE3393524250CCE004F79D5 /* RGBW.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -105,9 +127,18 @@
 			isa = PBXGroup;
 			children = (
 				DE1E1378241FA90D001ED95E /* ContentView.swift */,
+				DE007D2C242107C6003884C3 /* RGBListScene.swift */,
 				DE1E138D241FAFF8001ED95E /* RGBControllerScene.swift */,
 			);
 			path = scene;
+			sourceTree = "<group>";
+		};
+		DEE3393024250AA4004F79D5 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				DEE3393124250ABD004F79D5 /* FileManager.swift */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +214,12 @@
 			files = (
 				DE1E138E241FAFF8001ED95E /* RGBControllerScene.swift in Sources */,
 				DE1E1375241FA90D001ED95E /* AppDelegate.swift in Sources */,
+				DE007D3024210C9D003884C3 /* Enum.swift in Sources */,
+				DEE3393224250ABD004F79D5 /* FileManager.swift in Sources */,
+				DEE3393424250C7C004F79D5 /* RGBListViewModel.swift in Sources */,
 				DE1E1377241FA90D001ED95E /* SceneDelegate.swift in Sources */,
+				DEE3393624250CCE004F79D5 /* RGBW.swift in Sources */,
+				DE007D2D242107C6003884C3 /* RGBListScene.swift in Sources */,
 				DE1E1379241FA90D001ED95E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
